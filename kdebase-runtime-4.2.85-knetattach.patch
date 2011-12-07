@@ -1,0 +1,9 @@
+diff -up kdebase-runtime-4.2.85/knetattach/knetattach.desktop.knetattach kdebase-runtime-4.2.85/knetattach/knetattach.desktop
+--- kdebase-runtime-4.2.85/knetattach/knetattach.desktop.knetattach	2009-03-18 04:58:55.000000000 -0500
++++ kdebase-runtime-4.2.85/knetattach/knetattach.desktop	2009-05-14 13:45:54.980764940 -0500
+@@ -102,4 +102,5 @@ Type=Application
+ Terminal=false
+ X-KDE-StartupNotify=true
+ Categories=Qt;KDE;Network;RemoteAccess;
++NoDisplay=true
+ X-DocPath=knetattach/index.html

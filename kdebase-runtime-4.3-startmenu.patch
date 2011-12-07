@@ -1,0 +1,13 @@
+Index: runtime/platforms/win/kwinstartmenu/misc.h
+===================================================================
+--- runtime/platforms/win/kwinstartmenu/misc.h	(Revision 1063659)
++++ runtime/platforms/win/kwinstartmenu/misc.h	(Revision 1063660)
+@@ -28,7 +28,7 @@
+ #include <KUrl>
+ 
+ bool removeDirectory(const QString& aDir);
+-QString getStartMenuPath(bool bAllUsers=true);
++QString getStartMenuPath(bool bAllUsers=false);
+ QString getKDEStartMenuPath();
+ bool generateMenuEntries(QList<LinkFile> &files, const KUrl &url, const QString &relPathTranslated=QString());
+ void updateStartMenuLinks();

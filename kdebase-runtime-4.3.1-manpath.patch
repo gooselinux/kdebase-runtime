@@ -1,0 +1,100 @@
+diff -up kdebase-runtime-4.3.1/kioslave/man/kio_man.cpp.manpath kdebase-runtime-4.3.1/kioslave/man/kio_man.cpp
+--- kdebase-runtime-4.3.1/kioslave/man/kio_man.cpp.manpath	2009-06-03 13:54:13.000000000 +0200
++++ kdebase-runtime-4.3.1/kioslave/man/kio_man.cpp	2009-09-30 19:25:03.254684269 +0200
+@@ -1,5 +1,6 @@
+ /*  This file is part of the KDE libraries
+     Copyright (c) 2000 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
++    Copyright (c) 2009 Red Hat, Inc.
+ 
+     This library is free software; you can redistribute it and/or
+     modify it under the terms of the GNU Library General Public
+@@ -17,6 +18,13 @@
+     Boston, MA 02110-1301, USA.
+ */
+ 
++/* 
++ Changes:
++ 
++ - 2009-09-30: use manpath binary if available to construct the man path (Nils
++               Philippsen <nils@redhat.com>)
++*/
++
+ #include "kio_man.h"
+ 
+ #include <stdio.h>
+@@ -31,6 +39,8 @@
+ #include <QTextStream>
+ #include <QDataStream>
+ #include <QMap>
++#include <QIODevice>
++#include <QProcess>
+ #include <QRegExp>
+ #include <QTextCodec>
+ 
+@@ -817,7 +827,7 @@ void MANProtocol::showMainIndex()
+     finished();
+ }
+ 
+-void MANProtocol::constructPath(QStringList& constr_path, QStringList constr_catmanpath)
++void MANProtocol::constructPathFallback(QStringList& constr_path, QStringList constr_catmanpath)
+ {
+     QMap<QString, QString> manpath_map;
+     QMap<QString, QString> mandb_map;
+@@ -984,6 +994,43 @@ void MANProtocol::constructPath(QStringL
+     }
+ }
+ 
++void MANProtocol::constructPathManpath(QStringList& constr_path, QStringList& constr_catmanpath)
++{
++    QProcess manpath;
++    QStringList args;
++
++    // start the "manpath" command, ...
++    manpath.start( "manpath", args, QIODevice::ReadOnly );
++
++    // ... wait (forever) until it's started, ...
++    if ( ! manpath.waitForStarted( -1 ) )
++        // ... or errors out, ...
++        return;
++
++    // ... wait (forever) until it's finished, ...
++    if ( ! manpath.waitForFinished( -1 ) )
++        // ... or errors out, ...
++        return;
++
++    // ... grab its output, ...
++    QString manpath_output = QString( manpath.readAllStandardOutput() );
++
++    // ... close the process, ...
++    manpath.close();
++
++    // ... then process its output.
++    constr_path = manpath_output.split( ":", QString::SkipEmptyParts );
++}
++
++void MANProtocol::constructPath(QStringList& constr_path, QStringList& constr_catmanpath)
++{
++    // Attempt to use the "manpath" command, ...
++    constructPathManpath( constr_path, constr_catmanpath );
++    if ( constr_path.count() == 0 )
++        // ... if that yields nothing, fall back to our own implementation
++        constructPathFallback ( constr_path, constr_catmanpath );
++}
++
+ void MANProtocol::checkManPaths()
+ {
+     static bool inited = false;
+diff -up kdebase-runtime-4.3.1/kioslave/man/kio_man.h.manpath kdebase-runtime-4.3.1/kioslave/man/kio_man.h
+--- kdebase-runtime-4.3.1/kioslave/man/kio_man.h.manpath	2008-11-19 11:17:53.000000000 +0100
++++ kdebase-runtime-4.3.1/kioslave/man/kio_man.h	2009-09-30 19:24:18.733936178 +0200
+@@ -68,7 +68,9 @@ private:
+     void addToBuffer(const char *buffer, int buflen);
+     QString pageName(const QString& page) const;
+     QStringList buildSectionList(const QStringList& dirs) const;
+-    void constructPath(QStringList& constr_path, QStringList constr_catmanpath);
++    void constructPathFallback(QStringList& constr_path, QStringList constr_catmanpath);
++    void constructPathManpath(QStringList& constr_path, QStringList& constr_catmanpath);
++    void constructPath(QStringList& constr_path, QStringList& constr_catmanpath);
+ private:
+     static MANProtocol *_self;
+     QByteArray lastdir;

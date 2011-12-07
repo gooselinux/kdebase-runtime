@@ -1,0 +1,6 @@
+diff -up kdebase-runtime-4.3.4/plasma/CMakeLists.txt.webkit kdebase-runtime-4.3.4/plasma/CMakeLists.txt
+--- kdebase-runtime-4.3.4/plasma/CMakeLists.txt.webkit	2010-06-26 00:55:01.000000000 +0200
++++ kdebase-runtime-4.3.4/plasma/CMakeLists.txt	2010-06-26 00:56:23.000000000 +0200
+@@ -1,2 +1 @@
+-add_subdirectory(scriptengines)
+ add_subdirectory(tools)

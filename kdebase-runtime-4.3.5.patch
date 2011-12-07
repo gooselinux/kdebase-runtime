@@ -1,0 +1,2412 @@
+diff -Nur kdebase-runtime-4.3.4/desktoptheme/air/metadata.desktop kdebase-runtime-4.3.5/desktoptheme/air/metadata.desktop
+--- kdebase-runtime-4.3.4/desktoptheme/air/metadata.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/desktoptheme/air/metadata.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -22,7 +22,7 @@
+ Name[gu]=હવા
+ Name[he]=אוויר
+ Name[hi]=Air
+-Name[hr]=Zrak
++Name[hr]=Air
+ Name[hu]=Levegő
+ Name[is]=Loft
+ Name[it]=Aria
+@@ -58,7 +58,7 @@
+ Name[tg]=Ҳаво
+ Name[th]=Air
+ Name[tr]=Air
+-Name[uk]=Повітря
++Name[uk]=Air
+ Name[wa]=Air
+ Name[x-test]=xxAirxx
+ Name[zh_CN]=空气
+@@ -66,6 +66,7 @@
+ Comment=A breath of fresh air
+ Comment[ar]=نفس من الهواء النقي
+ Comment[ca]=Una alenada d'aire fresc
++Comment[ca@valencia]=Una alenada d'aire fresc
+ Comment[cs]=Závan čerstvého vzduchu
+ Comment[da]=En mundfuld frisk luft
+ Comment[de]=Ein Atemzug frische Luft
+@@ -79,7 +80,7 @@
+ Comment[fy]=it sykheljen yn de frisse lucht
+ Comment[gl]=Un folgo de ar fresco
+ Comment[hi]=ताज़ा हवा का एक झौंका
+-Comment[hr]=Malo svježeg zraka
++Comment[hr]=Dašak svježeg zraka
+ Comment[hu]=Friss fuvallat
+ Comment[is]=Ferskir vindar
+ Comment[it]=Un soffio d'aria fresca
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_browser.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_browser.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_browser.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_browser.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=Уеб браузър
+ Name[bn_IN]=ওয়েব ব্রাউজার
+ Name[ca]=Navegador web
++Name[ca@valencia]=Navegador web
+ Name[cs]=Webový prohlížeč
+ Name[csb]=Internetowi przezérnik
+ Name[da]=Webbrowser
+@@ -125,7 +126,7 @@
+ Comment[tg]=Здесь можно настроить веб-браузер по умолчанию. Все приложения KDE, в которых можно вызвать гиперссылку, будут использовать этот параметр.
+ Comment[th]=คุณสามารถปรับแต่งเว็บเบราว์เซอร์ปริยายของคุณได้ที่นี่ โปรแกรมของ KDE ทุกตัวที่คุณสามารถเลือกส่วนเชื่อมโยงได้ จะทำตามค่าที่ตั้งนี้
+ Comment[tr]=Burada öntanımlı web tarayıcınızı yapılandırabilirsiniz. Tüm KDE uygulamalarında bulunan bağlantılar bu seçenek kullanılarak açılacaktır.
+-Comment[uk]=Тут можна налаштувати ваш типовий навігатор Тенет. Всі програми KDE, які підтримують роботу з гіперпосиланнями повинні користуватися цими параметрами.
++Comment[uk]=Тут можна налаштувати ваш типовий навігатор інтернету. Всі програми KDE, які підтримують роботу з гіперпосиланнями, будуть користуватися вказаними тут параметрами.
+ Comment[vi]=Dịch vụ này cho phép bạn cấu hình trình duyệt mạng mặc định. Tất cả các chương trình của KDE có chứa liên kết mạng sẽ cần một trình duyệt dựa vào thiết lập này.
+ Comment[wa]=Vos ploz chal apontyî vosse prémetou betchteu waibe. Cwand vos tchoeziroz loyén dins telminme programe di KDE, i l' drovrè sorlon cisse tchuze.
+ Comment[x-test]=xxHere you can configure your default web browser. All KDE applications in which you can select hyperlinks should honor this setting.xx
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_filemanager.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_filemanager.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_filemanager.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_filemanager.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=Преглед на файлове
+ Name[bn_IN]=ফাইল পরিচালন ব্যবস্থা
+ Name[ca]=Gestor de fitxers
++Name[ca@valencia]=Gestor de fitxers
+ Name[cs]=Správce souborů
+ Name[csb]=Menadżera lopków
+ Name[da]=Filhåndtering
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_kemail.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_kemail.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_kemail.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_kemail.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=Програма за е-поща
+ Name[bn_IN]=ই-মেইল ক্লায়েন্ট
+ Name[ca]=Client de correu
++Name[ca@valencia]=Client de correu
+ Name[cs]=Emailový klient
+ Name[csb]=E-mailowô programa
+ Name[da]=E-mail-klient
+@@ -61,7 +62,7 @@
+ Comment[bg]=Избор на предпочитана програма за поща. Всички програми от KDE, които се нуждаят от достъп до електронната поща, ще ползват този компонент.
+ Comment[bn]=এই সার্ভিসটির সাহায্যে আপনার ডিফল্ট ই-মেইল ক্লায়েন্ট কনফিগার করতে পারেন। যে কোনো কে.ডি.ই. অ্যাপলিকেশনের ই-মেইল ক্লায়েন্ট প্রয়োজন হলে এই নির্বাচন মানা উচিত।
+ Comment[ca]=Aquest servei us permet configurar el vostre client de correu per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer aquesta opció.
+-Comment[ca@valencia]=Este servici vos permet configurar el vostre client de correu per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer esta opció.
++Comment[ca@valencia]=Este servei vos permet configurar el vostre client de correu per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer esta opció.
+ Comment[cs]=Tato služba umožňuje nastavit si výchozího klienta emailu. Všechny KDE aplikace, které vyžadují přístup k emailové aplikaci, by měly používat toto nastavení.
+ Comment[csb]=Tuwò mòżne wëbrac domëslną pòcztową programã. Wszëtczé programë KDE, w jaczich brëkùje sã z lënkòw, mùszôłëbë ùżëwac tegò ùstôwù.
+ Comment[cy]=Mae'r gwasanaeth ymayn gadael i chi ffurfweddu eich dibynnydd ebost cyffredinol. Dylai bob raglen KDE sydd angen cyrchiad i ddibynnydd ebost ddefnyddio'r gosodiad yma.
+@@ -125,7 +126,7 @@
+ Comment[tg]=Эта служба позволяет вам настроить почтовый клиент по умолчанию. Все приложения KDE, которым нужен почтовый клиент, будут использовать этот параметр.
+ Comment[th]=บริการนี้จะอนุญาตให้คุณตั้งโปรแกรมรับส่งอีเมลปริยายของคุณ โปรแกรมของ KDE ทุกตัวซึ่งจำเป็นต้องใช้งานโปรแกรมรับส่งอีเมล จะทำตามค่าที่ตั้งนี้
+ Comment[tr]=Bu servis öntanımlı e-posta istemcinizi seçmenize yardımcı olur.
+-Comment[uk]=Ця служба дозволяє вам налаштувати ваш типовий клієнт електронної пошти. Всі програми KDE, яким потрібен доступ до клієнта ел. пошти повинні користуватися цими параметрами.
++Comment[uk]=За допомогою цієї служби ви можете налаштувати ваш типовий клієнт електронної пошти. Всі програми KDE, яким потрібен доступ до клієнта електронної пошти будуть користуватися цими параметрами.
+ Comment[uz]=Bu xizmat andoza xat-xabar klientingizni moslash uchun imkoniyat yaratadi. Xat-xabar klienti kerak boʻlgan hamma KDE dasturlari shu moslamadan foydalanishi kerak.
+ Comment[uz@cyrillic]=Бу хизмат андоза хат-хабар клиентингизни мослаш учун имконият яратади. Хат-хабар клиенти керак бўлган ҳамма KDE дастурлари шу мосламадан фойдаланиши керак.
+ Comment[vi]=Dịch vụ này cho phép bạn cấu hình trình thư mặc định. Tất cả các chương trình của KDE cần gửi thư điện tử đều dựa vào thiết lập này.
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_terminal.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_terminal.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_terminal.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_terminal.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=Конзолна програма
+ Name[bn_IN]=টার্মিন্যাল এমুলেটর
+ Name[ca]=Emulador de terminal
++Name[ca@valencia]=Emulador de terminal
+ Name[cs]=Emulátor terminálu
+ Name[csb]=Emùlator terminala
+ Name[da]=Terminalemulator
+@@ -61,7 +62,7 @@
+ Comment[bg]=Избор на предпочитана конзолна програма. Всички програми от KDE, които се нуждаят от достъп до конзолата, ще ползват този компонент.
+ Comment[bn]=এই সার্ভিসটির সাহায্যে আপনার ডিফল্ট টার্মিনাল এমুলেটর কনফিগার করতে পারেন। যে কোনো কে.ডি.ই. অ্যাপলিকেশনের টার্মিনাল এমুলেটর চালানোর প্রয়োজন হলে এই নির্বাচন মানা উচিত।
+ Comment[ca]=Aquest servei us permet configurar el vostre emulador de terminal per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer aquesta opció.
+-Comment[ca@valencia]=Este servici vos permet configurar el vostre emulador de terminal per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer esta opció.
++Comment[ca@valencia]=Este servei vos permet configurar el vostre emulador de terminal per omissió. Totes les aplicacions KDE que precisin d'accés a una aplicació de client de correu tindria que reconèixer esta opció.
+ Comment[cs]=Tato služba umožňuje nastavit si výchozího emulátor terminálu. Všechny KDE aplikace, které spouští emulátor terminálu, by měly používat toto nastavení.
+ Comment[csb]=Tuwò mòżne wëbrac domëslny emùlator terminala. Wszëtczé programë KDE, w jaczich brëkùje sã z lënkòw, mùszôłëbë ùżëwac tegò ùstôwù.
+ Comment[cy]=Mae'r gwasanaeth yma yn gadael i chi ffurfweddu eich efelychydd terfynell cyffredinol. Dylai pob rhaglen KDE sy'n cychwyn efelychydd terfynell ddefnyddio'r gosodiad yma.
+@@ -125,7 +126,7 @@
+ Comment[tg]=Эта служба позволяет настроить эмулятор терминала по умолчанию. Все приложения KDE, которые вызывают эмулятор терминала, должны следовать этому параметру.
+ Comment[th]=บริการนี้จะอนุญาตให้คุณปรับแต่งโปรแกรมจำลองเทอร์มินัลของคุณ โปรแกรมของ KDE ทุกตัวที่เรียกใช้งานโปรแกรมจำลองเทอร์มินัล จะทำตามค่าที่ตั้งนี้
+ Comment[tr]=Bu servis öntanımlı uçbirim uygulamasını seçmenize yardımcı olur.
+-Comment[uk]=Ця служба дає змогу налаштувати ваш типовий емулятор термінала. Всі програми KDE, яким потрібен доступ до емулятора термінала повинні користуватися цими параметрами.
++Comment[uk]=За допомогою цієї служби ви можете налаштувати ваш типовий емулятор термінала. Всі програми KDE, яким потрібен доступ до емулятора термінала будуть користуватися цими параметрами.
+ Comment[uz]=Bu xizmat andoza terminal emulyatoringizni moslash uchun imkoniyat yaratadi. Terminal emulyatori kerak boʻlgan hamma KDE dasturlari shu moslamadan foydalanishi kerak.
+ Comment[uz@cyrillic]=Бу хизмат андоза терминал эмуляторингизни мослаш учун имконият яратади. Терминал эмулятори керак бўлган ҳамма KDE дастурлари шу мосламадан фойдаланиши керак.
+ Comment[vi]=Dịch vụ này cho phép bạn cấu hình trình mô phỏng thiết bị cuối mặc định. Tất cả các chương trình của KDE cần mở thiết bị đầu cuối đều dựa vào thiết lập này.
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_wm.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_wm.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/componentservices/kcm_wm.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/componentservices/kcm_wm.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=Мениджър на прозорци
+ Name[bn_IN]=উইন্ডো পরিচালন ব্যবস্থা
+ Name[ca]=Gestor de finestres
++Name[ca@valencia]=Gestor de finestres
+ Name[cs]=Správce oken
+ Name[csb]=Mendżer òknów
+ Name[da]=Vindueshåndtering
+diff -Nur kdebase-runtime-4.3.4/kcontrol/componentchooser/windowmanagers/compiz-custom.desktop kdebase-runtime-4.3.5/kcontrol/componentchooser/windowmanagers/compiz-custom.desktop
+--- kdebase-runtime-4.3.4/kcontrol/componentchooser/windowmanagers/compiz-custom.desktop	2009-10-02 10:18:54.000000000 +0200
++++ kdebase-runtime-4.3.5/kcontrol/componentchooser/windowmanagers/compiz-custom.desktop	2010-01-21 21:47:57.000000000 +0100
+@@ -58,7 +58,7 @@
+ Name[te]=Compiz custom (దానిని దించుటకు వ్రాపర్ స్క్రిప్‍ట్‌ 'compiz-kde-launcher' ను సృష్టించుము)
+ Name[th]=Compiz แบบปรับแต่งเอง (สร้างสคริปต์ครอบ 'compiz-kde-launcher' เพื่อเรียกใช้มัน)
+ Name[tr]=Compiz özel (çalıştırmak için sarıcı betik 'compiz-kde-launcher' oluştur)
+-Name[uk]=Нетиповий Compiz (створити скрипт-обгортку "compiz-kde-launcher" для його запуску)
++Name[uk]=Нетиповий Compiz (створити скрипт-обгортку «compiz-kde-launcher» для його запуску)
+ Name[wa]=Compiz a vosse môde (ahivez on scripe wrapper « compiz-kde-launcher » po l' enonder)
+ Name[x-test]=xxCompiz custom (create wrapper script 'compiz-kde-launcher' to launch it)xx
+ Name[zh_CN]=Compiz 定制(创建执行用包装脚本“compiz-kde-launcher”)
+diff -Nur kdebase-runtime-4.3.4/kcontrol/kded/kcmkded.desktop kdebase-runtime-4.3.5/kcontrol/kded/kcmkded.desktop
+--- kdebase-runtime-4.3.4/kcontrol/kded/kcmkded.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/kded/kcmkded.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -19,7 +19,7 @@
+ Name[bn_IN]=পরিসেবা পরিচালনব্যবস্থা
+ Name[br]=Merour ar servijoù
+ Name[ca]=Gestor del servei
+-Name[ca@valencia]=Gestor del servici
++Name[ca@valencia]=Gestor del servei
+ Name[cs]=Správce služeb
+ Name[csb]=Menadżera ùsłëżnotów
+ Name[cy]=Rheolydd Gwasanaethau
+diff -Nur kdebase-runtime-4.3.4/kcontrol/knotify/kcmnotify.desktop kdebase-runtime-4.3.5/kcontrol/knotify/kcmnotify.desktop
+--- kdebase-runtime-4.3.4/kcontrol/knotify/kcmnotify.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/knotify/kcmnotify.desktop	2010-01-21 21:47:57.000000000 +0100
+@@ -86,7 +86,7 @@
+ Name[tg]=Огоҳномаҳои система
+ Name[th]=การแจ้งให้ทราบ
+ Name[tr]=Sistem Bildirimleri
+-Name[uk]=Системні повідомлення
++Name[uk]=Системні сповіщення
+ Name[uz]=Tizimning xabarnomalari
+ Name[uz@cyrillic]=Тизимнинг хабарномалари
+ Name[vi]=Thông báo Hệ thống
+@@ -171,7 +171,7 @@
+ Comment[tg]=Танзимоти огоҳномаҳои система
+ Comment[th]=ปรับแต่งการแจ้งให้ทราบของระบบ
+ Comment[tr]=Sistem Bildirimi Yapılandırması
+-Comment[uk]=Налаштування системних повідомлень
++Comment[uk]=Налаштування системних сповіщень
+ Comment[uz]=Tizimning xabarnomalarini moslash
+ Comment[uz@cyrillic]=Тизимнинг хабарномаларини мослаш
+ Comment[vi]=Cấu hình Thông báo Hệ thống
+diff -Nur kdebase-runtime-4.3.4/kcontrol/locale/default/entry.desktop kdebase-runtime-4.3.5/kcontrol/locale/default/entry.desktop
+--- kdebase-runtime-4.3.4/kcontrol/locale/default/entry.desktop	2009-10-02 10:18:54.000000000 +0200
++++ kdebase-runtime-4.3.5/kcontrol/locale/default/entry.desktop	2010-01-21 21:47:57.000000000 +0100
+@@ -9,7 +9,7 @@
+ Name[bn_IN]=মার্কিন ইংরাজি
+ Name[br]=Saozneg SUA
+ Name[ca]=Anglès US
+-Name[ca@valencia]=Anglès US
++Name[ca@valencia]=Anglés US
+ Name[cs]=Americká angličtina
+ Name[csb]=Amerikańsczi anielsczi
+ Name[cy]=Saesneg UD
+diff -Nur kdebase-runtime-4.3.4/kcontrol/locale/language.desktop kdebase-runtime-4.3.5/kcontrol/locale/language.desktop
+--- kdebase-runtime-4.3.4/kcontrol/locale/language.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kcontrol/locale/language.desktop	2010-01-21 21:47:57.000000000 +0100
+@@ -86,7 +86,7 @@
+ Name[tg]=Забонҳои системаи KDE
+ Name[th]=ประเทศ/เขตพื้นที่และภาษา
+ Name[tr]=Ülke/Bölge ve Dil
+-Name[uk]=Країна/регіон та мова
++Name[uk]=Країна/Регіон та мова
+ Name[uz]=Davlat/region va til
+ Name[uz@cyrillic]=Давлат/регион ва тил
+ Name[vi]=Quốc gia và Ngôn ngữ
+diff -Nur kdebase-runtime-4.3.4/khelpcenter/kcmhelpcenter.desktop kdebase-runtime-4.3.5/khelpcenter/kcmhelpcenter.desktop
+--- kdebase-runtime-4.3.4/khelpcenter/kcmhelpcenter.desktop	2009-10-02 10:18:56.000000000 +0200
++++ kdebase-runtime-4.3.5/khelpcenter/kcmhelpcenter.desktop	2010-01-21 21:48:00.000000000 +0100
+@@ -167,7 +167,7 @@
+ Comment[tg]=Настройка индексов справочной системы KDE
+ Comment[th]=การปรับแต่งและสร้างดัชนีสำหรับค้นหาของศูนย์ช่วยเหลือ
+ Comment[tr]=Yardım merkezi indeksinin yapılandırılması ve oluşturulması
+-Comment[uk]=Створення та налаштування індексу пошуку центру довідки
++Comment[uk]=Створення та налаштування індексу пошуку Центру довідки
+ Comment[uz]=Yordam markazining qidiruv indeksini yaratish va moslash
+ Comment[uz@cyrillic]=Ёрдам марказининг қидирув индексини яратиш ва мослаш
+ Comment[vi]=Cấu hình và tạo ra chỉ mục tìm kiếm của trung tâm trợ giúp
+diff -Nur kdebase-runtime-4.3.4/khelpcenter/plugins/Tutorials/.directory kdebase-runtime-4.3.5/khelpcenter/plugins/Tutorials/.directory
+--- kdebase-runtime-4.3.4/khelpcenter/plugins/Tutorials/.directory	2009-10-02 10:18:56.000000000 +0200
++++ kdebase-runtime-4.3.5/khelpcenter/plugins/Tutorials/.directory	2010-01-21 21:48:00.000000000 +0100
+@@ -69,7 +69,7 @@
+ Name[tg]=Дастурамалҳо
+ Name[th]=บทสอน
+ Name[tr]=Öğretici Belgeler
+-Name[uk]=Інструкції
++Name[uk]=Настанови
+ Name[uz]=Darsliklar
+ Name[uz@cyrillic]=Дарсликлар
+ Name[vi]=Trợ lý
+@@ -107,7 +107,7 @@
+ Comment[he]=מסמכי הדרכה ומבוא.
+ Comment[hi]=शिक्षण पाठ तथा परिचय दस्तावेज़
+ Comment[hne]=सिक्छन पाठ अउ परिचय कागद
+-Comment[hr]=Dokumenti s vodičima i uvodom.
++Comment[hr]=Dokumenti s vodičima i uvodima.
+ Comment[hsb]=Tutorije a zawody
+ Comment[hu]=Bevezető jellegű dokumentumok.
+ Comment[is]=Leiðbeiningar og kynningarskjöl.
+@@ -146,7 +146,7 @@
+ Comment[tg]=Ҳуҷҷатҳои дастурамал
+ Comment[th]=เอกสารบทสอนและบทนำ
+ Comment[tr]=Öğretici ve bilgilendirici belgeler.
+-Comment[uk]=Інструкції та вступні документи.
++Comment[uk]=Настанови та вступні документи.
+ Comment[vi]=Tài liệu trợ lý và giới thiệu.
+ Comment[wa]=Tutoriels et documints d' adrovaedje.
+ Comment[x-test]=xxTutorial and introduction documents.xx
+diff -Nur kdebase-runtime-4.3.4/kioslave/info/kde-info2html kdebase-runtime-4.3.5/kioslave/info/kde-info2html
+--- kdebase-runtime-4.3.4/kioslave/info/kde-info2html	2009-06-03 13:54:13.000000000 +0200
++++ kdebase-runtime-4.3.5/kioslave/info/kde-info2html	2010-01-21 21:48:01.000000000 +0100
+@@ -655,7 +655,7 @@
+       #header_top div { background-image: url("help:/common/top-left.jpg"); }
+       #header_top div div { background-image: url("help:/common/top-right.jpg"); }
+ 
+-      <!-- Newer updates to kde.org, looks good -->
++      /* Newer updates to kde.org, looks good */
+       #header_bottom {
+           margin: 0 auto;
+           padding: 0.1em 0em 0.3em 0;
+diff -Nur kdebase-runtime-4.3.4/kioslave/man/kmanpart.desktop kdebase-runtime-4.3.5/kioslave/man/kmanpart.desktop
+--- kdebase-runtime-4.3.4/kioslave/man/kmanpart.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/kioslave/man/kmanpart.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -66,8 +66,8 @@
+ Comment[si]=Embeddable Troff Viewer
+ Comment[sk]=Vložiteľný prehliadač Troff
+ Comment[sl]=Vgradni pregledovalnik za Troff
+-Comment[sr]=Угњездиви приказивач Трофа
+-Comment[sr@latin]=Ugnjezdivi prikazivač Troffa
++Comment[sr]=Угнездиви приказивач Трофа
++Comment[sr@latin]=Ugnezdivi prikazivač Troffa
+ Comment[sv]=Inbäddningsbar Troff-visare
+ Comment[ta]=உட்பொதிந்த ட்ராஃப் காட்சி
+ Comment[te]=పొదగదగ్గ ట్రాఫ్ వీక్షిణి
+diff -Nur kdebase-runtime-4.3.4/kioslave/network/ioslave/network.protocol kdebase-runtime-4.3.5/kioslave/network/ioslave/network.protocol
+--- kdebase-runtime-4.3.4/kioslave/network/ioslave/network.protocol	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/kioslave/network/ioslave/network.protocol	2010-01-21 21:48:01.000000000 +0100
+@@ -10,6 +10,7 @@
+ Description[bg]=Kioslave за разглеждане на мрежата
+ Description[bn_IN]=নেটওয়ার্ক ব্রাউজ করার জন্য একটি kioslave
+ Description[ca]=Un esclau-kio per a explorar la xarxa
++Description[ca@valencia]=Un esclau-kio per a explorar la xarxa
+ Description[cs]=Pomocný protokol pro procházení sítě
+ Description[csb]=Wtëkôcz przezéraniô sécë
+ Description[da]=En kioslave til at gennemse netværket
+diff -Nur kdebase-runtime-4.3.4/kioslave/network/kded/networkwatcher.desktop kdebase-runtime-4.3.5/kioslave/network/kded/networkwatcher.desktop
+--- kdebase-runtime-4.3.4/kioslave/network/kded/networkwatcher.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/kioslave/network/kded/networkwatcher.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -10,6 +10,7 @@
+ Name[bg]=Наблюдение на мрежата
+ Name[bn_IN]=নেটওয়ার্ক নিরীক্ষণ ব্যবস্থা
+ Name[ca]=Vigilant de la xarxa
++Name[ca@valencia]=Vigilant de la xarxa
+ Name[cs]=Sledování sítě
+ Name[csb]=Dozérôcz sécë
+ Name[da]=Netværksovervåger
+@@ -62,6 +63,7 @@
+ Comment=Keeps track of the network and updates directory listings of the network:/ protocol
+ Comment[ar]=يراقب الشبكة و يحدث الدليل الذي يعرض بروتوكلات الشبكة :/ protocol
+ Comment[ca]=Fa un seguiment de la xarxa i actualitza els llistats de directoris del protocol network:/
++Comment[ca@valencia]=Fa un seguiment de la xarxa i actualitza els llistats de directoris del protocol network:/
+ Comment[cs]=Udržuje přehled o síti a aktualizuje výpisy adresářů protokolu network:/
+ Comment[da]=Holder øje med netværket og opdaterer mappelister for protokollen network:/
+ Comment[de]=Überwacht das Netzwerk und aktualisiert Ordnerauflistungen des Protokolls „network:/“
+diff -Nur kdebase-runtime-4.3.4/kioslave/thumbnail/desktopthumbnail.desktop kdebase-runtime-4.3.5/kioslave/thumbnail/desktopthumbnail.desktop
+--- kdebase-runtime-4.3.4/kioslave/thumbnail/desktopthumbnail.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/kioslave/thumbnail/desktopthumbnail.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -5,6 +5,7 @@
+ Name[bg]=Файлове на работния плот
+ Name[bn_IN]=ডেস্কটপ ফাইল
+ Name[ca]=Fitxers «desktop»
++Name[ca@valencia]=Fitxers «desktop»
+ Name[cs]=Soubory plochy
+ Name[csb]=Lopczi pùltu
+ Name[da]=Desktop-filer
+diff -Nur kdebase-runtime-4.3.4/kioslave/thumbnail/directorythumbnail.desktop kdebase-runtime-4.3.5/kioslave/thumbnail/directorythumbnail.desktop
+--- kdebase-runtime-4.3.4/kioslave/thumbnail/directorythumbnail.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/kioslave/thumbnail/directorythumbnail.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -5,6 +5,7 @@
+ Name[bg]=Фиректории
+ Name[bn_IN]=ডিরেক্টরি
+ Name[ca]=Directoris
++Name[ca@valencia]=Directoris
+ Name[cs]=Adresáře
+ Name[csb]=Katalodżi
+ Name[da]=Mapper
+diff -Nur kdebase-runtime-4.3.4/kioslave/trash/kcmtrash.desktop kdebase-runtime-4.3.5/kioslave/trash/kcmtrash.desktop
+--- kdebase-runtime-4.3.4/kioslave/trash/kcmtrash.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/kioslave/trash/kcmtrash.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -76,7 +76,7 @@
+ Comment[bg]=Това ви позволява да праите настройка на кошчето.
+ Comment[bn_IN]=এই পরিসেবা দ্বারা আবর্জনার বাক্স কনফিগার করা যাবে।
+ Comment[ca]=Aquest servei permet la configuració de la paperera.
+-Comment[ca@valencia]=Este servici permet la configuració de la paperera.
++Comment[ca@valencia]=Este servei permet la configuració de la paperera.
+ Comment[cs]=Tato služba umožňuje nastavení koše.
+ Comment[csb]=Na ùsłëżnota zezwôlô na kònfigùracëjã kòsza.
+ Comment[da]=Denne tjeneste muliggør konfiguration af affald.
+diff -Nur kdebase-runtime-4.3.4/knotify/kde.notifyrc kdebase-runtime-4.3.5/knotify/kde.notifyrc
+--- kdebase-runtime-4.3.4/knotify/kde.notifyrc	2009-11-27 14:01:44.000000000 +0100
++++ kdebase-runtime-4.3.5/knotify/kde.notifyrc	2010-01-21 21:47:57.000000000 +0100
+@@ -757,7 +757,7 @@
+ Comment[bg]=Възникна сериозна грешка и програмата беше спряна
+ Comment[bn_IN]=একটি মারাত্মক ত্রুটির ফলে প্রোগ্রামটি বন্ধ করতে বাধ্য হয়েছে
+ Comment[ca]=Hi ha hagut un error seriós que ha provocat la sortida del programa
+-Comment[ca@valencia]=Ha hagut un error seriós que ha provocat l'eixida del programa
++Comment[ca@valencia]=Hi ha hagut un error seriós que ha provocat l'eixida del programa
+ Comment[cs]=Nastala závažná chyba, v důsledku které byl program ukončen
+ Comment[csb]=Pòkôza sã cãżkô fela, przez jaką programa òsta zakùńczonô.
+ Comment[da]=Der var en alvorlig fejl som forårsagede at programmet afsluttede
+@@ -1070,7 +1070,7 @@
+ Comment[bn]=প্রোগ্রাম-এ এমন কিছু ত্রুটি রয়েছে যার ফলে সমস্যা হতে পারে
+ Comment[bn_IN]=প্রোগ্রামের মধ্যে একটি ত্রুটি দেখা দিয়েছে এবং এর ফলে সমস্যা দেখা দিতে পারে
+ Comment[ca]=Hi ha hagut un error en el programa que pot provocar problemes
+-Comment[ca@valencia]=Ha hagut un error en el programa que pot provocar problemes
++Comment[ca@valencia]=Hi ha hagut un error en el programa que pot provocar problemes
+ Comment[cs]=V programu nastala chyba, která může způsobit problémy
+ Comment[csb]=W programie pòkôża sã fela, jakô mògła doprowôdzëc do problemów
+ Comment[da]=Der var en fejl i program som kan volde problemer
+@@ -1218,7 +1218,7 @@
+ Comment[be@latin]=Uźnikła vielmi važnaja pamyłka, jakaja prynamsi vymusiła prahramu vyjści.
+ Comment[bg]=Възникна много сериозна грешка и програмата беше спряна
+ Comment[ca]=Hi ha hagut un error molt seriós, com a mínim ha provocat la sortida del programa
+-Comment[ca@valencia]=Ha hagut un error molt seriós, com a mínim ha provocat l'eixida del programa
++Comment[ca@valencia]=Hi ha hagut un error molt seriós, com a mínim ha provocat l'eixida del programa
+ Comment[cs]=Nastala velmi závažná chyba, která má za následek minimálně ukončení programu
+ Comment[csb]=Pòkôza sã cãżkô fela, jakô przënômni nã programã zakùńcza
+ Comment[da]=En meget alvorlig fejl opstod, som mindst forårsagede at programmet afsluttede
+@@ -2059,7 +2059,7 @@
+ Comment[tg]=Паёми иттилоотӣ нишон шудааст
+ Comment[th]=กำลังแสดงข้อความบอกข้อมูล
+ Comment[tr]=Bir bilgi iletisi gösterildi
+-Comment[uk]=показане інформаційне повідомлення
++Comment[uk]=Показане інформаційне повідомлення
+ Comment[wa]=On messaedje d' informåcion est mostré
+ Comment[x-test]=xxAn information message is being shownxx
+ Comment[zh_CN]=一个信息消息正在被显示
+diff -Nur kdebase-runtime-4.3.4/knotify/knotifyconfig.cpp kdebase-runtime-4.3.5/knotify/knotifyconfig.cpp
+--- kdebase-runtime-4.3.4/knotify/knotifyconfig.cpp	2009-04-15 12:25:25.000000000 +0200
++++ kdebase-runtime-4.3.5/knotify/knotifyconfig.cpp	2010-01-21 21:47:57.000000000 +0100
+@@ -40,9 +40,11 @@
+ 	return m;
+ }
+ 
+-void KNotifyConfig::clearCache()
++void KNotifyConfig::reparseConfiguration()
+ {
+-    static_cache->clear();
++	QCache<QString, KSharedConfig::Ptr> &cache = *static_cache;
++	foreach (const QString& filename, cache.keys())
++		(*cache[filename])->reparseConfiguration();
+ }
+ 
+ 
+diff -Nur kdebase-runtime-4.3.4/knotify/knotifyconfig.h kdebase-runtime-4.3.5/knotify/knotifyconfig.h
+--- kdebase-runtime-4.3.4/knotify/knotifyconfig.h	2009-04-28 15:46:08.000000000 +0200
++++ kdebase-runtime-4.3.5/knotify/knotifyconfig.h	2010-01-21 21:47:57.000000000 +0100
+@@ -110,9 +110,9 @@
+ 		QString eventid;
+ 
+ 		/**
+-		 * clear the config cache.  to be used when the config may have changed
++		 * reparse the cached configs.  to be used when the config may have changed
+ 		 */
+-        static void clearCache();
++		static void reparseConfiguration();
+ };
+ 
+ #endif
+diff -Nur kdebase-runtime-4.3.4/knotify/knotify.cpp kdebase-runtime-4.3.5/knotify/knotify.cpp
+--- kdebase-runtime-4.3.4/knotify/knotify.cpp	2009-04-28 15:46:08.000000000 +0200
++++ kdebase-runtime-4.3.5/knotify/knotify.cpp	2010-01-21 21:47:57.000000000 +0100
+@@ -82,7 +82,7 @@
+ void KNotify::reconfigure()
+ {
+ 	KGlobal::config()->reparseConfiguration();
+-    KNotifyConfig::clearCache();
++	KNotifyConfig::reparseConfiguration();
+ 	loadConfig();
+ }
+ 
+diff -Nur kdebase-runtime-4.3.4/kpasswdserver/kpasswdserver.cpp kdebase-runtime-4.3.5/kpasswdserver/kpasswdserver.cpp
+--- kdebase-runtime-4.3.4/kpasswdserver/kpasswdserver.cpp	2009-07-29 13:10:37.000000000 +0200
++++ kdebase-runtime-4.3.5/kpasswdserver/kpasswdserver.cpp	2010-01-21 21:47:59.000000000 +0100
+@@ -600,7 +600,7 @@
+             if (info.getExtraField(AUTHINFO_EXTRAFIELD_DOMAIN).isValid ())
+                 dlg.setDomain(info.getExtraField(AUTHINFO_EXTRAFIELD_DOMAIN).toString());
+ 
+-            if (info.getExtraField(AUTHINFO_EXTRAFIELD_ANONYMOUS).isValid ())
++            if (info.getExtraField(AUTHINFO_EXTRAFIELD_ANONYMOUS).isValid () && password.isEmpty() && username.isEmpty())
+                 dlg.setAnonymousMode(info.getExtraField(AUTHINFO_EXTRAFIELD_ANONYMOUS).toBool());
+ 
+ #ifndef Q_WS_WIN
+diff -Nur kdebase-runtime-4.3.4/kstyles/themes/beos.themerc kdebase-runtime-4.3.5/kstyles/themes/beos.themerc
+--- kdebase-runtime-4.3.4/kstyles/themes/beos.themerc	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kstyles/themes/beos.themerc	2010-01-21 21:48:02.000000000 +0100
+@@ -91,7 +91,7 @@
+ Comment[bg]=Стил BeOS
+ Comment[bn_IN]=থিমবিহীন BeOS-র অনুরূপ বিন্যাস
+ Comment[ca]=Estil semblant al BeOS sense temes
+-Comment[ca@valencia]=Estil semblant al BeOS sense temes
++Comment[ca@valencia]=Estil paregut al BeOS sense temes
+ Comment[cs]=Styl bez motivu podobný BeOS
+ Comment[csb]=Sztél szlachùjący za BeOS
+ Comment[da]=Utematiseret BeOS-agtig stil
+diff -Nur kdebase-runtime-4.3.4/kstyles/themes/highcolor.themerc kdebase-runtime-4.3.5/kstyles/themes/highcolor.themerc
+--- kdebase-runtime-4.3.4/kstyles/themes/highcolor.themerc	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kstyles/themes/highcolor.themerc	2010-01-21 21:48:02.000000000 +0100
+@@ -139,7 +139,7 @@
+ Comment[tg]=Многоцветная версия классического стиля
+ Comment[th]=รูปแบบคลาสสิครุ่นที่มีความละเอียดสีสูง
+ Comment[tr]=Klasik biçimin yüksek renk sürümü
+-Comment[uk]=Версія класичного стилю для 64К кольорів та більше
++Comment[uk]=Версія класичного стилю для 64000 кольорів та більше
+ Comment[wa]=Modêye hôtès coleurs do stîle classike
+ Comment[x-test]=xxHighcolor version of the classic stylexx
+ Comment[zh_CN]=经典风格的高色彩版本
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/kuriikwsfilter.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/kuriikwsfilter.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/kuriikwsfilter.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/kuriikwsfilter.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=InternetKeywordsFilter
+ Name[th]=ตัวกรองคำค้นหาบนอินเทอร์เน็ต
+ Name[tr]=İnternetAnahtarSözcükSüzgeci
+-Name[uk]=Фільтр ключових слів Інтернет
++Name[uk]=Фільтр ключових слів інтернет
+ Name[uz]=Internet kalit soʻzlar filteri
+ Name[uz@cyrillic]=Интернет калит сўзлар филтери
+ Name[vi]=Bộ lọc từ khoá Mạng
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/kurisearchfilter.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/kurisearchfilter.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/kurisearchfilter.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/kurisearchfilter.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=SearchKeywordsFilter
+ Name[th]=ตัวกรองคำค้นหา
+ Name[tr]=TaramaKelimeSüzgeci
+-Name[uk]=Фільтр ключових слів Інтернет
++Name[uk]=Фільтр ключових слів інтернет
+ Name[uz]=Qidirish kalit soʻzlar filteri
+ Name[uz@cyrillic]=Қидириш калит сўзлар филтери
+ Name[vi]=Bộ lọc tìm từ khoá
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchprovider.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchprovider.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchprovider.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchprovider.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -76,7 +76,7 @@
+ Comment[tg]=Барномаи ҷустуҷӯ
+ Comment[th]=เครื่องมือสำหรับค้นหา
+ Comment[tr]=Arama Motoru
+-Comment[uk]=Механізм пошуку
++Comment[uk]=Рушій пошуку
+ Comment[uz]=Qidirish vositasi
+ Comment[uz@cyrillic]=Қидириш воситаси
+ Comment[vi]=Cơ chế Tìm kiếm
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/bugft.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/bugft.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/bugft.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/bugft.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -89,6 +89,7 @@
+ Query[bg]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+ Query[bn_IN]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+ Query[ca]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
++Query[ca@valencia]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+ Query[cs]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+ Query[csb]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+ Query[da]=http://bugs.kde.org/buglist.cgi?quicksearch=\\{@}
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/bugno.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/bugno.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/bugno.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/bugno.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -74,7 +74,7 @@
+ Name[tg]=Поиск по номеру в базе ошибок KDE
+ Name[th]=ค้นหาฐานข้อมูลบั๊ก KDE แบบหมายเลข
+ Name[tr]=KDE Hata Veritabanı Hata Numarasıyla Arama
+-Name[uk]=Пошук у базі даних помилок KDE по номеру
++Name[uk]=Пошук у базі даних помилок KDE за номером
+ Name[uz]=KDE xato maʼlumot bazasi (xatoning raqamini qidirish)
+ Name[uz@cyrillic]=KDE хато маълумот базаси (хатонинг рақамини қидириш)
+ Name[vi]=Tìm kiếm số hiệu lỗi trong cơ sở dữ liệu lỗi của KDE
+@@ -88,6 +88,7 @@
+ Query[bg]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+ Query[bn_IN]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+ Query[ca]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
++Query[ca@valencia]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+ Query[cs]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+ Query[csb]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+ Query[da]=https://bugs.kde.org/show_bug.cgi?id=\\{@}
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/cpan.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/cpan.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/cpan.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/cpan.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=CPAN - архив скриптов Perl
+ Name[th]=CPAN - เครือข่ายเก็บบันทึกภาษา Perl แบบครอบคลุม
+ Name[tr]=CPAN - Detaylı Perl Arşiv Ağı
+-Name[uk]=CPAN - Всеосяжна мережа архівів Perl
++Name[uk]=CPAN — всеосяжна мережа архівів Perl
+ Name[uz]=CPAN - Perl boʻyicha mukammal arxiv tarmogʻi
+ Name[uz@cyrillic]=CPAN - Perl бўйича мукаммал архив тармоғи
+ Name[vi]=CPAN - Mạng kho lưu Perl đầy đủ
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ctan.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ctan.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ctan.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ctan.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=CTAN - архив TeX
+ Name[th]=CTAN - เครือข่ายเก็บบันทึกภาษา TeX แบบครอบคลุม
+ Name[tr]=CTAN - Detaylı TeX Arşiv Ağı
+-Name[uk]=CTAN - Всеосяжна мережа архівів TeX
++Name[uk]=CTAN — всеосяжна мережа архівів TeX
+ Name[uz]=CTAN - TeX boʻyicha mukammal arxiv tarmogʻi
+ Name[uz@cyrillic]=CTAN - TeX бўйича мукаммал архив тармоғи
+ Name[vi]=CTAN - Mạng kho lưu TeX đầy đủ
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/de2en.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/de2en.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/de2en.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/de2en.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=dict.cc Translation: German to English
+ Name[bn_IN]=dict.cc অনুবাদ: জার্মান থেকে ইংরাজি
+ Name[ca]=Traducció dict.cc: Alemany - Anglès
+-Name[ca@valencia]=Traducció dict.cc: Alemany - Anglès
++Name[ca@valencia]=Traducció dict.cc: Alemany - Anglés
+ Name[cs]=Překlad dic.cc: z němčiny do angličtiny
+ Name[csb]=dict.cc: miemiecczi -> anielsczi
+ Name[da]=dict.cc oversættelse: Tysk til engelsk
+@@ -67,7 +67,7 @@
+ Name[si]=dict.cc Translation: German to English
+ Name[sk]=dict.cc Preklad z nemčiny do angličtiny
+ Name[sl]=Prevod dict.cc: nemščina v angleščino
+-Name[sr]=дикт.цц: са немачког на енглески
++Name[sr]=German to English: дикт.цц: са немачког на енглески
+ Name[sr@latin]=dict.cc: sa nemačkog na engleski
+ Name[sv]=dict.cc översättning: tyska till engelska
+ Name[ta]=dict.cc Translation மொழிப்பெயர்ப்பு: ஜெர்மன் மொழியில் இருந்து ஆங்கிலத்துக்கு
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои dictcc.com: немисӣ-англисӣ
+ Name[th]=dict.cc แปลภาษาเยอรมันเป็นอังกฤษ
+ Name[tr]=dict.cc Çevirisi: Almancadan İngilizceye
+-Name[uk]=dict.cc: переклад з німецької на англійську
++Name[uk]=dict.cc — переклад з німецької англійською
+ Name[uz]=dict.cc tarjima: Olmonchadan Inglizchaga
+ Name[uz@cyrillic]=dict.cc таржима: Олмончадан Инглизчага
+ Name[vi]=dict.cc Dịch: Tiếng Đức sang tiếng Anh
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/de2fr.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/de2fr.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/de2fr.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/de2fr.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=লিও - জার্মান থেকে ফরাসী বা ফরাসী থেকে জার্মান-এ অনুবাদ করুন
+ Name[bn_IN]=LEO - জার্মান ও ফ্রেঞ্চের মধ্যে অনুবাদ করুন
+ Name[ca]=LEO - Tradueix entre alemany i francès
+-Name[ca@valencia]=LEO - Tradueix entre alemany i francès
++Name[ca@valencia]=LEO - Tradueix entre alemany i francés
+ Name[cs]=LEO - překlad mezi němčinou a francouzštinou
+ Name[csb]=LEO - dolmaczenié miemiecczi -> francësczi
+ Name[da]=LEO - Oversæt mellem tysk og fransk
+@@ -73,7 +73,7 @@
+ Name[tg]=LEO - тарҷумаҳои немисӣ-франсузӣ
+ Name[th]=LEO - แปลภาษาเยอรมัน <->ฝรั่งเศส
+ Name[tr]=LEO - Almancadan Fransızcaya Çeviri
+-Name[uk]=LEO - переклад між німецькою та французькою
++Name[uk]=LEO — з німецької французькою
+ Name[uz]=LEO - Olmonchadan Fransuzchaga tarjima
+ Name[uz@cyrillic]=LEO - Олмончадан Французчага таржима
+ Name[vi]=LEO - Dịch tiếng Đức sang tiếng Pháp
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2de.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2de.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2de.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2de.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=dict.cc অনুবাদ: ইংরাজি থেকে জার্মান
+ Name[bn_IN]=dict.cc অনুবাদ: ইংরাজি থেকে জার্মান
+ Name[ca]=Traducció dict.cc: Anglès - Alemany
+-Name[ca@valencia]=Traducció dict.cc: Anglès - Alemany
++Name[ca@valencia]=Traducció dict.cc: Anglés - Alemany
+ Name[cs]=Překlad dict.cc: z angličtiny do němčiny
+ Name[csb]=dict.cc: anielsczi -> miemiecczi
+ Name[da]=dict.cc oversættelse: Engelsk til tysk
+@@ -67,7 +67,7 @@
+ Name[si]=dict.cc Translation: English to German
+ Name[sk]=dict.cc Preklad z angličtiny do nemčiny
+ Name[sl]=Prevod dict.cc: angleščina v nemščino
+-Name[sr]=дикт.цц: са енглеског на немачки
++Name[sr]=English to German: дикт.цц: са енглеског на немачки
+ Name[sr@latin]=dict.cc: sa engleskog na nemački
+ Name[sv]=dict.cc översättning: engelska till tyska
+ Name[ta]=dict.cc Translation  மொழிபெயர்ப்பு: ஆங்கிலத்தில் இருந்து ஜெர்மன் மொழிக்கு
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои dict.cc: англисӣ-немисӣ
+ Name[th]=การแปล dict.cc: ภาษาอังกฤษเป็นเยอรมัน
+ Name[tr]=dict.cc Çevirisi: İngilizceden Almancaya
+-Name[uk]=dict.cc: переклад з англійської на німецьку
++Name[uk]=dict.cc — переклад з англійської німецькою
+ Name[uz]=dict.cc tarjima: Inglizchadan Olmonchaga
+ Name[uz@cyrillic]=dict.cc таржима: Инглизчадан Олмончага
+ Name[vi]=dict.cc Dịch: Tiếng Anh sang tiếng Đức
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2es.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2es.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2es.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2es.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: ইংরাজি থেকে স্প্যানিশ
+ Name[bn_IN]=WordReference.com অনুবাদ: ইংরাজি থেকে স্প্যানিশ
+ Name[ca]=Traducció WordReference.com: Anglès - Espanyol
+-Name[ca@valencia]=Traducció WordReference.com: Anglès - Espanyol
++Name[ca@valencia]=Traducció WordReference.com: Anglés - Espanyol
+ Name[cs]=Překlad WordReference.com: z angličtiny do španělštiny
+ Name[csb]=WordReference.com: anielsczi -> szpańsczi
+ Name[cy]=Cyfieithiad WordReference.com: Saesneg i Sbaeneg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои ереводчик WordReference.com: англисӣ-испанӣ
+ Name[th]=การแปล WordReference.com: แปลภาษาอังกฤษเป็นสเปน
+ Name[tr]=WordReference.com Çevirisi: İngilizceden İspanyolcaya
+-Name[uk]=WordReference.com: переклад з англійської на іспанську
++Name[uk]=WordReference.com — переклад з англійської іспанською
+ Name[uz]=WordReference.com tarjima: Inglizchadan Ispanchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Инглизчадан Испанчага
+ Name[vi]=WordReference.com Dịch: tiếng Anh sang tiếng Tây Ban Nha
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2fr.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2fr.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2fr.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2fr.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: ইংরাজি থেকে ফরাসী
+ Name[bn_IN]=WordReference.com অনুবাদ: ইংরাজি থেকে ফ্রেঞ্চ
+ Name[ca]=Traducció WordReference.com: Anglès - Francès
+-Name[ca@valencia]=Traducció WordReference.com: Anglès - Francès
++Name[ca@valencia]=Traducció WordReference.com: Anglés - Francés
+ Name[cs]=Překlad WordReference.com: z angličtiny do francouzštiny
+ Name[csb]=WordReference.com: anielsczi -> francësczi
+ Name[cy]=Cyfieithiad WordReference.com: Saesneg i Ffrangeg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои WordReference.com: англисӣ-франсузӣ
+ Name[th]=การแปลของ WordReference.com: ภาษาอังกฤษเป็นฝรั่งเศส
+ Name[tr]=WordReference.com Çevirisi: İngilizceden Fransızcaya
+-Name[uk]=WordReference.com: переклад з англійської на французьку
++Name[uk]=WordReference.com — переклад з англійської французькою
+ Name[uz]=WordReference.com tarjima: Inglizchadan Fransuzchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Инглизчадан Французчага
+ Name[vi]=WordReference.com Dịch: Tiếng Anh sang tiếng Pháp
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2it.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2it.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/en2it.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/en2it.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: ইংরাজি থেকে ইতালীয়
+ Name[bn_IN]=WordReference.com অনুবাদ: ইংরাজি থেকে ইটালিয়ান
+ Name[ca]=Traducció WordReference.com: Anglès - Italià
+-Name[ca@valencia]=Traducció WordReference.com: Anglès - Italià
++Name[ca@valencia]=Traducció WordReference.com: Anglés - Italià
+ Name[cs]=Překlad WordReference.com: z angličtiny do italštiny
+ Name[csb]=WordReference.com: anielsczi -> italsczi
+ Name[cy]=Cyfieithiad WordReference.com: Saesneg i Eidaleg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои WordReference.com: англисӣ-итолиёӣ
+ Name[th]=การแปลจาก WordReference.com: แปลภาษาอังกฤษเป็นอิตาเลี่ยน
+ Name[tr]=WordReference.com Çevirisi: İngilizceden İtalyancaya
+-Name[uk]=WordReference.com: переклад з англійської на італійську
++Name[uk]=WordReference.com — переклад з англійської італійською
+ Name[uz]=WordReference.com tarjima: Inglizchadan Italyanchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Инглизчадан Италянчага
+ Name[vi]=WordReference.com Dịch: Tiếng Anh sang tiếng Ý
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/es2en.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/es2en.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/es2en.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/es2en.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: স্প্যানিশ থেকে ইংরাজি 
+ Name[bn_IN]=WordReference.com অনুবাদ: স্প্যানিশ থেকে ইংরাজি
+ Name[ca]=Traducció WordReference.com: Espanyol - Anglès
+-Name[ca@valencia]=Traducció WordReference.com: Espanyol - Anglès
++Name[ca@valencia]=Traducció WordReference.com: Espanyol - Anglés
+ Name[cs]=Překlad WordReference.com: ze španělštiny do angličtiny
+ Name[csb]=WordReference.com: szpańsczi -> anielsczi
+ Name[cy]=Cyfieithiad WordReference.com: Sbaeneg i Saesneg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои WordReference.com: испанӣ-англисӣ
+ Name[th]=การแปลจาก WordReference.com: แปลภาษาสเปนเป็นอังกฤษ
+ Name[tr]=WordReference.com Çevirisi: İspanyolcadan İngilizceye
+-Name[uk]=WordReference.com: переклад з іспанської на англійську
++Name[uk]=WordReference.com — переклад з іспанської англійською
+ Name[uz]=WordReference.com tarjima: Ispanchadan Inglizchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Испанчадан Инглизчага
+ Name[vi]=WordReference.com Dịch: Tiếng Tây Ban Nha sang tiếng Anh
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ethicle.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ethicle.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ethicle.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ethicle.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -5,6 +5,7 @@
+ Name[bg]=Ethicle
+ Name[bn_IN]=Ethicle
+ Name[ca]=Ethicle
++Name[ca@valencia]=Ethicle
+ Name[cs]=Ethicle
+ Name[csb]=Ethicle
+ Name[da]=Ethicle
+@@ -62,6 +63,7 @@
+ Query[bg]=http://www.ethicle.com/search.php?q=\\{@}
+ Query[bn_IN]=http://www.ethicle.com/search.php?q=\\{@}
+ Query[ca]=http://www.ethicle.com/search.php?q=\\{@}
++Query[ca@valencia]=http://www.ethicle.com/search.php?q=\\{@}
+ Query[cs]=http://www.ethicle.com/search.php?q=\\{@}
+ Query[csb]=http://www.ethicle.com/search.php?q=\\{@}
+ Query[da]=http://www.ethicle.com/search.php?q=\\{@}
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/fr2de.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/fr2de.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/fr2de.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/fr2de.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=লিও - জার্মান থেকে ফরাসী বা ফরাসী থেকে জার্মান-এ অনুবাদ করুন
+ Name[bn_IN]=LEO - ফ্রেঞ্চ ও জার্মানের মধ্যে অনুবাদ করুন
+ Name[ca]=LEO - Tradueix entre francès i alemany
+-Name[ca@valencia]=LEO - Tradueix entre francès i alemany
++Name[ca@valencia]=LEO - Tradueix entre francés i alemany
+ Name[cs]=LEO - překlad mezi francouzštinou a němčinou
+ Name[csb]=LEO - dolmaczenié: francësczi ->miemiecczi
+ Name[da]=LEO - Oversæt mellem fransk og tysk
+@@ -73,7 +73,7 @@
+ Name[tg]=LEO - тарҷумаҳои франсузӣ-немисӣ
+ Name[th]=LEO - แปลภาษา ฝรั่งเศส <-> เยอรมัน
+ Name[tr]=LEO - Fransızcadan Almancaya Çeviri
+-Name[uk]=LEO - переклад між французькою та німецькою
++Name[uk]=LEO — переклад з французької німецькою
+ Name[uz]=LEO - Fransuzchadan Olmonchaga tarjima
+ Name[uz@cyrillic]=LEO - Французчадан Олмончага таржима
+ Name[vi]=LEO - Dịch tiếng Pháp sang tiếng Đức
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/fr2en.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/fr2en.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/fr2en.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/fr2en.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: ফরাসী থেকে ইংরাজি 
+ Name[bn_IN]=WordReference.com অনুবাদ: ফ্রেঞ্চ থেকে ইংরাজি
+ Name[ca]=Traducció WordReference.com: Francès - Anglès
+-Name[ca@valencia]=Traducció WordReference.com: Francès - Anglès
++Name[ca@valencia]=Traducció WordReference.com: Francés - Anglés
+ Name[cs]=Překlad WordReference.com: z francouzštiny do angličtiny
+ Name[csb]=WordReference.com: francësczi -> anielsczi
+ Name[cy]=Cyfieithiad WordReference.com: Ffrangeg i Saesneg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои WordReference.com: франсузӣ-англисӣ
+ Name[th]=การแปลจาก WordReference.com: แปลภาษาฝรั่งเศสเป็นอังกฤษ
+ Name[tr]=WordReference.com Çevirisi: Fransızcadan İngilizceye
+-Name[uk]=WordReference.com: переклад з французької на англійську
++Name[uk]=WordReference.com — переклад з французької англійською
+ Name[uz]=WordReference.com tarjima: Fransuzchadan Inglizchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Французчадан Инглизчага
+ Name[vi]=WordReference.com Dịch: tiếng Pháp sang tiếng Anh
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/google_advanced.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/google_advanced.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/google_advanced.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/google_advanced.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -77,7 +77,7 @@
+ Name[tg]=Google - Ҷустуҷӯи муфассал
+ Name[th]=ค้นหาด้วยกูเกิ้ลแบบขั้นสูง
+ Name[tr]=Google Gelişmiş Arayıcı
+-Name[uk]=Складний пошук на Google
++Name[uk]=Складний пошук у Google
+ Name[uz]=Google - Ilgʻor qidirish
+ Name[uz@cyrillic]=Google - Илғор қидириш
+ Name[vi]=Tra cứu Nâng cao Google
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/google_lucky.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/google_lucky.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/google_lucky.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/google_lucky.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=গুগল্ (ভাগ্যবান মনে করছি)
+ Name[bn_IN]=Google (I'm Feeling Lucky)
+ Name[ca]=Google (Avui tinc sort!)
+-Name[ca@valencia]=Google (Avui tinc sort!)
++Name[ca@valencia]=Google (Hui tinc sort!)
+ Name[cs]=Google (Zkusím štěstí)
+ Name[csb]=Google - "Szczestlëwé trafienié"
+ Name[cy]=Google(Dwi'n Teimlo'n Lwcus)
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/grec.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/grec.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/grec.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/grec.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -82,6 +82,7 @@
+ Name[zh_TW]=很棒的加泰隆尼亞語文字典 (GRan Enciclopèdia  Catalana)
+ Query=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[ca]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
++Query[ca@valencia]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[cs]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[da]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[de]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+@@ -94,6 +95,7 @@
+ Query[hu]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[is]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[it]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
++Query[ja]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[lv]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[nb]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+ Query[nds]=http://ec.grec.net/cgi-bin/AppDLC3.exe?APP=CERCADLC&GECART=\\{@}
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/hyperdictionary.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/hyperdictionary.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/hyperdictionary.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/hyperdictionary.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -69,7 +69,7 @@
+ Name[sk]=HyperDictionary.com
+ Name[sl]=HyperDictionary.com
+ Name[sr]=Хиперречник
+-Name[sr@latin]=HyperDictionary
++Name[sr@latin]=Hiperrečnik
+ Name[sv]=Hyperdictionary.com
+ Name[ta]=திறந்த அடைவு
+ Name[te]=HyperDictionary.com
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/hyperdictionary_thesaurus.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/hyperdictionary_thesaurus.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/hyperdictionary_thesaurus.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/hyperdictionary_thesaurus.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -69,7 +69,7 @@
+ Name[sk]=HyperDictionary.com - slovník synoným
+ Name[sl]=Tezaver HyperDictionary.com
+ Name[sr]=Хиперречник (синонимар)
+-Name[sr@latin]=HyperDictionary (sinonimar)
++Name[sr@latin]=Hiperrečnik (sinonimar)
+ Name[sv]=HyperDictionary.com synonymlexikon
+ Name[ta]=HyperDictionary.com  சொற்களஞ்சியம்
+ Name[te]=HyperDictionary.com థెసారెస్
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/it2en.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/it2en.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/it2en.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/it2en.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=WordReference.com অনুবাদ: ইতালীয় থেকে ইংরাজি 
+ Name[bn_IN]=WordReference.com অনুবাদ: ইটালিয়ান থেকে ইংরাজি
+ Name[ca]=Traducció WordReference.com: Italià - Anglès
+-Name[ca@valencia]=Traducció WordReference.com: Italià - Anglès
++Name[ca@valencia]=Traducció WordReference.com: Italià - Anglés
+ Name[cs]=Překlad WordReference.com: z italštiny do angličtiny
+ Name[csb]=WordReference.com: italsczi -> anielsczi
+ Name[cy]=Cyfieithiad WordReference.com: Eidaleg i Saesneg
+@@ -75,7 +75,7 @@
+ Name[tg]=Тарҷумаҳои WordReference.com: итолиёӣ-англисӣ
+ Name[th]=บริการแปลภาษาจาก WordReference.com: แปลภาษาอิตาเลียนเป็นอังกฤษ
+ Name[tr]=WordReference.com Çevirisi: İtalyancadan İngilizceye
+-Name[uk]=WordReference.com: переклад з італійської на англійську
++Name[uk]=WordReference.com — переклад з італійської англійською
+ Name[uz]=WordReference.com tarjima: Italyanchadan Inglizchaga
+ Name[uz@cyrillic]=WordReference.com таржима: Италянчадан Инглизчага
+ Name[vi]=WordReference.com Dịch: Tiếng Ý sang tiếng Anh
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/mamma.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/mamma.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/mamma.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/mamma.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=Mamma - модари ҳамаи системаҳои ҷустуҷӯӣ
+ Name[th]=บริการ Mamma - มารดาของเครื่องมือค้นหาทั้งปวง
+ Name[tr]=Mamma - Bütün arama motorlarının Annesi
+-Name[uk]=Mamma - мати всіх пошукових машин
++Name[uk]=Mamma — мати всіх пошукових машин
+ Name[uz]=Mamma - Hamma qidirish vositalarining onasi
+ Name[uz@cyrillic]=Mamma - Ҳамма қидириш воситаларининг онаси
+ Name[vi]=Mamma - Người mẹ của tất cả các máy truy tìm dữ liệu
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-deru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-deru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-deru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-deru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - тарҷумаҳои немисӣ-русӣ
+ Name[th]=บริการ Multitran - แปลความหมายระหว่างภาษาเยอรมันและภาษารัสเซีย
+ Name[tr]=Multitran - Almancadan Rusçaya Çeviri
+-Name[uk]=Multitran - переклад між німецькою та російською
++Name[uk]=Multitran — переклад з німецької російською
+ Name[uz]=Multitran - Nemischadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Немисчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte l' Almand eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-enru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-enru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-enru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-enru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=মাল্টিট্র্যান - ইংরিজি থেকে রুশ বা রুশ থেকে ইংরিজিতে অনুবাদ করুন
+ Name[bn_IN]=Multitran - ইংরাজি ও রাশিয়ানের মধ্যে অনুবাদ করুন
+ Name[ca]=Multitran - Tradueix entre anglès i rus
+-Name[ca@valencia]=Multitran - Tradueix entre anglès i rus
++Name[ca@valencia]=Multitran - Tradueix entre anglés i rus
+ Name[cs]=Multitran - překlad mezi angličtinou a ruštinou
+ Name[csb]=Multitran - dolmaczenié: anielsczi ë rusczi
+ Name[da]=Multitran - oversæt mellem engelsk og russisk
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - тарҷумаҳои англисӣ-русӣ
+ Name[th]=บริการ Multitran - แปลความหมายระหว่างภาษาอังกฤษและภาษารัสเซีย
+ Name[tr]=Multitran - Translate Between English and Russian
+-Name[uk]=Multitran - переклад між англійською та російською
++Name[uk]=Multitran — переклад з англійської російською
+ Name[uz]=Multitran - Inglizchadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Инглизчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte l' Inglès eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-esru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-esru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-esru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-esru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - тарҷумаҳои испанӣ-русӣ
+ Name[th]=บริการ Multitran - แปลภาษาระหว่างภาษาสเปนและภาษารัสเซีย
+ Name[tr]=Multitran - İspanyolcadan Rusçaya Çeviri
+-Name[uk]=Multitran - переклад між іспанською та російською
++Name[uk]=Multitran — переклад з іспанської російською
+ Name[uz]=Multitran - Ispanchadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Испанчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte l' Espagnol eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-frru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-frru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-frru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-frru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=মাল্টিট্র্যান - ফরাসী থেকে রুশ বা রুশ থেকে ফরাসীতে অনুবাদ করুন
+ Name[bn_IN]=Multitran - ফ্রেঞ্চ ও রাশিয়ানের মধ্যে অনুবাদ করুন
+ Name[ca]=Multitran - Tradueix entre francès i rus
+-Name[ca@valencia]=Multitran - Tradueix entre francès i rus
++Name[ca@valencia]=Multitran - Tradueix entre francés i rus
+ Name[cs]=Multitran - překlad mezi francouzštinou a ruštinou
+ Name[csb]=Multitran - dolmaczenié: francësczi ë rusczi
+ Name[da]=Multitran - oversæt mellem fransk og russisk
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - франсузӣ-русӣ
+ Name[th]=บริการ Multitran - แปลภาษาระหว่างภาษาฝรั่งเศสและภาษารัสเซีย
+ Name[tr]=Multitran - Fransızcadan Rusçaya Çeviri
+-Name[uk]=Multitran - переклад між французькою та німецькою
++Name[uk]=Multitran — переклад з французької німецькою
+ Name[uz]=Multitran - Fransuzchadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Французчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte li Francès eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-itru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-itru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-itru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-itru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - тарҷумаҳои итолиёӣ-русӣ
+ Name[th]=บริการ Multitran - แปลภาษาระหว่างภาษาอิตาลีและภาษารัสเซีย
+ Name[tr]=Multitran - İtalyancadan Rusçaya Çeviri
+-Name[uk]=Multitran - переклад між італійською та російською
++Name[uk]=Multitran — переклад з італійської російською
+ Name[uz]=Multitran - Italyanchadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Италянчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte l' Itålyin eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-nlru.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-nlru.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/multitran-nlru.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/multitran-nlru.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn]=মাল্টিট্র্যান - ওলন্দাজ থেকে রুশ বা রুশ থেকে ওলন্দাজে অনুবাদ করুন
+ Name[bn_IN]=Multitran - ডাচ ও রাশিয়ানের মধ্যে অনুবাদ করুন
+ Name[ca]=Multitran - Tradueix entre holandès i rus
+-Name[ca@valencia]=Multitran - Tradueix entre holandès i rus
++Name[ca@valencia]=Multitran - Tradueix entre holandés i rus
+ Name[cs]=Multitran - překlad mezi holandštinou a ruštinou
+ Name[csb]=Multitran - dolmaczenié: dëńsczi ë rusczi
+ Name[da]=Multitran - oversæt mellem hollandsk og russisk
+@@ -68,7 +68,7 @@
+ Name[tg]=Multitran - тарҷумаҳои голландӣ-русӣ
+ Name[th]=บริการ Multitran - แปลภาษาระหว่างภาษาดัตช์และภาษารัสเซีย
+ Name[tr]=Multitran - Flamancadan Rusçaya Çeviri
+-Name[uk]=Multitran - переклад між голландською та російською
++Name[uk]=Multitran — переклад з голландської російською
+ Name[uz]=Multitran - Gollanchadan Ruschaga tarjima
+ Name[uz@cyrillic]=Multitran - Голланчадан Русчага таржима
+ Name[wa]=Multitran - Ratoûne inte li Neyerlandès eyet l' Russe
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/python.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/python.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/python.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/python.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -76,7 +76,7 @@
+ Name[tg]=Справочник по Python
+ Name[th]=คู่มืออ้างอิงภาษาไพธอน
+ Name[tr]=Python Başvuru Elkitabı
+-Name[uk]=Довідник по Python
++Name[uk]=Довідник з Python
+ Name[uz]=Python uchun koʻllanma
+ Name[uz@cyrillic]=Python учун кўлланма
+ Name[vi]=Sổ tay Tham khảo Python
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/qt3.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/qt3.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/qt3.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/qt3.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -73,7 +73,7 @@
+ Name[tg]=Ҳуҷҷатҳои Qt3
+ Name[th]=เอกสารออนไลน์ล่าสุดของ Qt3
+ Name[tr]=Qt3 Çevrimiçi Dokümantasyonu
+-Name[uk]=Документація Qt3 онлайн
++Name[uk]=Документація з Qt3 у мережі
+ Name[uz]=Qt3 uchun koʻllanma
+ Name[uz@cyrillic]=Qt3 учун кўлланма
+ Name[wa]=Documintåcion di Qt3 so les fyis
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/qt.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/qt.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/qt.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/qt.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -76,7 +76,7 @@
+ Name[tg]=Онлайн-документация к последней версии Qt
+ Name[th]=เอกสารออนไลน์ล่าสุดเกี่ยวกับ Qt
+ Name[tr]=Güncel Qt Dökümantasyonu
+-Name[uk]=Остання документація Qt онлайн
++Name[uk]=Найсвіжіша документація з Qt у мережі
+ Name[uz]=Qt uchun koʻllanma
+ Name[uz@cyrillic]=Qt учун кўлланма
+ Name[vi]=Tài liệu Trực tuyến Mới nhất của Qt
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/rae.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/rae.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/rae.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/rae.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -77,7 +77,7 @@
+ Name[tg]=Словарь Испанской Академии (RAE)
+ Name[th]=พจนานุกรมของ Spanish Academy (RAE)
+ Name[tr]=İspanyol Akademisinin Sözlüğü (RAE)
+-Name[uk]=Словник Іспанської академії (RAE)
++Name[uk]=Словник іспанської академії (RAE)
+ Name[uz]=Ispan akademiyasining (RAE) lugʻati
+ Name[uz@cyrillic]=Испан академиясининг (RAE) луғати
+ Name[vi]=Từ điển của Viện hàn lâm Tây Ban Nha (RAE)
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ruby_application_archive.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ruby_application_archive.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/ruby_application_archive.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/ruby_application_archive.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -75,7 +75,7 @@
+ Name[tg]=Архивҳои барномаи Ruby
+ Name[th]=คลังโปรแกรมภาษารูบี้
+ Name[tr]=Ruby Uygulama Arşivi
+-Name[uk]=Ruby Application Archive
++Name[uk]=Архів програм мовою Ruby
+ Name[uz]=Ruby dastur arxivi
+ Name[uz@cyrillic]=Ruby дастур архиви
+ Name[vi]=Kho lưu Ứng dụng Ruby
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/whatis.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/whatis.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/whatis.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/whatis.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -76,7 +76,7 @@
+ Name[tg]=Дархости "Whatis"
+ Name[th]=การค้นหา Whatis
+ Name[tr]=Nedir Sorgusu
+-Name[uk]=Запит "Що це"
++Name[uk]=Запит «Що це?»
+ Name[vi]=Hỏi Whatis
+ Name[wa]=Cweraedje Whatis
+ Name[x-test]=xxWhatis Queryxx
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wikipedia.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wikipedia.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wikipedia.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wikipedia.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -76,7 +76,7 @@
+ Name[tg]=Wikipedia - энсиклопедияи озод
+ Name[th]=วิกิพีเดีย - สารานุกรมเสรี
+ Name[tr]=Wikipedia - Ücretsiz Ansiklopedi
+-Name[uk]=Wikipedia - вільна енциклопедія
++Name[uk]=Вікіпедія — вільна енциклопедія
+ Name[uz]=Wikipedia - Erkin ensiklopediya
+ Name[uz@cyrillic]=Wikipedia - Эркин энциклопедия
+ Name[vi]=Wikipedia - Bách khoa Tự do
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wiktionary.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wiktionary.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wiktionary.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wiktionary.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -74,7 +74,7 @@
+ Name[tg]=Wiktionary - луғати озод
+ Name[th]=วิกิชันนารี - พจนานุุกรมเสรี
+ Name[tr]=Wiktionary - Ücretsiz Ansiklopedi
+-Name[uk]=Wiktionary - вільний словник
++Name[uk]=Вікісловник — вільний словник
+ Name[uz]=Wiktionary - Erkin lugʻat
+ Name[uz@cyrillic]=Wiktionary - Эркин луғат
+ Name[vi]=Wiktionary - Từ điển Tự do
+@@ -155,7 +155,7 @@
+ Query[tg]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+ Query[th]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+ Query[tr]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+-Query[uk]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
++Query[uk]=http://uk.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+ Query[uz]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+ Query[uz@cyrillic]=http://en.wiktionary.org/wiki/Special:Search?search=\\{@}&go=Go
+ Query[wa]=http://wa.wikipedia.org/wiki/Motî:\{@}
+diff -Nur kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wordref.desktop kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wordref.desktop
+--- kdebase-runtime-4.3.4/kurifilter-plugins/ikws/searchproviders/wordref.desktop	2009-10-02 10:19:01.000000000 +0200
++++ kdebase-runtime-4.3.5/kurifilter-plugins/ikws/searchproviders/wordref.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -13,7 +13,7 @@
+ Name[bn_IN]=WordReference.com ইংরাজি অভিধান
+ Name[br]=Geriaoueg saozneg WordReference.com
+ Name[ca]=WordReference.com diccionari anglès
+-Name[ca@valencia]=WordReference.com diccionari anglès
++Name[ca@valencia]=WordReference.com diccionari anglés
+ Name[cs]=Anglický slovník WordReference.com
+ Name[csb]=WordReference.com: anielsczi słowôrz
+ Name[cy]=Geiriadur Saesneg WorldReference.com
+diff -Nur kdebase-runtime-4.3.4/kwalletd/kwalletd.notifyrc kdebase-runtime-4.3.5/kwalletd/kwalletd.notifyrc
+--- kdebase-runtime-4.3.4/kwalletd/kwalletd.notifyrc	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/kwalletd/kwalletd.notifyrc	2010-01-21 21:48:00.000000000 +0100
+@@ -5,6 +5,7 @@
+ Comment[bg]=Услуга "портфейл" за KDE
+ Comment[bn_IN]=KDE Wallet ডেমন
+ Comment[ca]=Dimoni de carteres del KDE
++Comment[ca@valencia]=Dimoni de carteres del KDE
+ Comment[cs]=Démon úschovny KDE
+ Comment[csb]=Demóna KDE Wallet
+ Comment[da]=Dæmon for KDE's tegnebog
+@@ -62,6 +63,7 @@
+ Name[bg]=kwalletd
+ Name[bn_IN]=kwalletd
+ Name[ca]=kwalletd
++Name[ca@valencia]=kwalletd
+ Name[cs]=kwalletd
+ Name[csb]=kwalletd
+ Name[da]=kwalletd
+@@ -121,6 +123,7 @@
+ Name[bg]=Нужна е парола
+ Name[bn_IN]=পাসওয়ার্ড প্রয়োজন
+ Name[ca]=Cal contrasenya
++Name[ca@valencia]=Cal contrasenya
+ Name[cs]=Je třeba heslo
+ Name[csb]=Wëmôgô zjinaczi parolë
+ Name[da]=Kræver adgangskode
+@@ -137,7 +140,7 @@
+ Name[gl]=Precisa dun contrasinal
+ Name[gu]=પાસવર્ડ જરૂરી છે
+ Name[hi]=पासवर्ड की जरूरत है
+-Name[hr]=Potrebna lozinka
++Name[hr]=Potrebna zaproka
+ Name[hu]=Jelszó megadása szükséges
+ Name[is]=Þarf lykilorð
+ Name[it]=Necessita di una password
+@@ -178,6 +181,7 @@
+ Comment[ar]=مراقب محفظة كدي يطلب كلمة سر
+ Comment[bg]=Услугата "портфейл" на KDE изисква парола
+ Comment[ca]=El dimoni de carteres del KDE demana una contrasenya
++Comment[ca@valencia]=El dimoni de carteres del KDE demana una contrasenya
+ Comment[cs]=Démon úschovny KDE požaduje heslo
+ Comment[csb]=Demóna KDE Wallet żądô parolë
+ Comment[da]=Dæmonen for KDE's tegnebog anmoder om en adgangskode
+@@ -193,7 +197,7 @@
+ Comment[ga]=Tá Deamhan Sparáin KDE ag iarraidh focal faire
+ Comment[gl]=O Daemon de carteiras de KDE pide un contrasinal
+ Comment[hi]=KDE वालेट डेमॉन एक पासवर्ड के लिए आग्रह करता है
+-Comment[hr]=KDE-ov novčanik daemon zahtijeva lozinku
++Comment[hr]=KDE-ov novčanik daemon zahtijeva zaporku
+ Comment[hu]=A KDE jelszótároló szolgáltatás jelszót kér
+ Comment[is]=KDE Veskispúkinn biður um lykilorð
+ Comment[it]=Il demone dei portafogli di KDE richiede una password
+diff -Nur kdebase-runtime-4.3.4/l10n/ad/entry.desktop kdebase-runtime-4.3.5/l10n/ad/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/ad/entry.desktop	2009-10-02 10:19:04.000000000 +0200
++++ kdebase-runtime-4.3.5/l10n/ad/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -32,7 +32,7 @@
+ Name[he]=אנדורה
+ Name[hi]=अंडोरा
+ Name[hne]=अंडोरा
+-Name[hr]=Andorra
++Name[hr]=Andora
+ Name[hsb]=Andora
+ Name[hu]=Andorra
+ Name[is]=Andorra
+diff -Nur kdebase-runtime-4.3.4/l10n/ae/entry.desktop kdebase-runtime-4.3.5/l10n/ae/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/ae/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/ae/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সংযুক্ত আরব আমিরশাহী
+ Name[br]=Stadoù-Unanet Arabeg
+ Name[ca]=Unió dels Emirats Àrabs
+-Name[ca@valencia]=Emirats Àrabs Units
++Name[ca@valencia]=Unió dels Emirats Àrabs
+ Name[cs]=Spojené arabské emiráty
+ Name[csb]=Zrzeszóné Abrabsczé Emiratë
+ Name[cy]=Emiraethau Arabaidd Unedig
+diff -Nur kdebase-runtime-4.3.4/l10n/an/entry.desktop kdebase-runtime-4.3.5/l10n/an/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/an/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/an/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -9,7 +9,7 @@
+ Name[bn_IN]=নেদারল্যান্ডস অ্যান্টিলিস
+ Name[br]=Antilh an Izelvroioù
+ Name[ca]=Antilles Holandeses
+-Name[ca@valencia]=Antilles del Països Baixos
++Name[ca@valencia]=Antilles Holandeses
+ Name[cs]=Nizozemské Antily
+ Name[csb]=Hòlandzczi Antile
+ Name[cy]=Ynysoedd Iseldiraidd Y Carib?
+diff -Nur kdebase-runtime-4.3.4/l10n/az/entry.desktop kdebase-runtime-4.3.5/l10n/az/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/az/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/az/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আজারবাইজান
+ Name[br]=Azerbeidjan
+ Name[ca]=Azerbaidjan
+-Name[ca@valencia]=Azerbaitjan
++Name[ca@valencia]=Azerbaidjan
+ Name[cs]=Ázerbajdžánský
+ Name[csb]=Azerbejdżan
+ Name[cy]=Aserbaijan
+diff -Nur kdebase-runtime-4.3.4/l10n/bd/entry.desktop kdebase-runtime-4.3.5/l10n/bd/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/bd/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/bd/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=বাংলাদেশ
+ Name[br]=Bangladaech
+ Name[ca]=Bangla Desh
+-Name[ca@valencia]=Bangladesh
++Name[ca@valencia]=Bangla Desh
+ Name[cs]=Bangladéš
+ Name[csb]=Bangladesz
+ Name[cy]=Bangladesh
+diff -Nur kdebase-runtime-4.3.4/l10n/bj/entry.desktop kdebase-runtime-4.3.5/l10n/bj/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/bj/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/bj/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=বেনিন
+ Name[br]=Benin
+ Name[ca]=Benín
+-Name[ca@valencia]=Benin
++Name[ca@valencia]=Benín
+ Name[cs]=Benin
+ Name[csb]=Benin
+ Name[cy]=Benin
+diff -Nur kdebase-runtime-4.3.4/l10n/centralamerica.desktop kdebase-runtime-4.3.5/l10n/centralamerica.desktop
+--- kdebase-runtime-4.3.4/l10n/centralamerica.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/centralamerica.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আমেরিকা, মধ্য
+ Name[br]=Amerika, Kreiz
+ Name[ca]=Amèrica Central
+-Name[ca@valencia]=Amèrica, central
++Name[ca@valencia]=Amèrica Central
+ Name[cs]=Amerika, Střední
+ Name[csb]=Westrzédnô Amerika
+ Name[cy]=America, Canolig
+diff -Nur kdebase-runtime-4.3.4/l10n/centraleurope.desktop kdebase-runtime-4.3.5/l10n/centraleurope.desktop
+--- kdebase-runtime-4.3.4/l10n/centraleurope.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/centraleurope.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ইউরোপ, মধ্য
+ Name[br]=Europa, Kreiz
+ Name[ca]=Europa Central
+-Name[ca@valencia]=Europa, central
++Name[ca@valencia]=Europa Central
+ Name[cs]=Evropa, Střední
+ Name[csb]=Westrzédnô Eùropa
+ Name[cy]=Ewrop, Canolig
+diff -Nur kdebase-runtime-4.3.4/l10n/cf/entry.desktop kdebase-runtime-4.3.5/l10n/cf/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/cf/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/cf/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=মধ্য আফ্রিকান প্রজাতন্ত্র
+ Name[br]=Republik centrafricaine
+ Name[ca]=República Centreafricana
+-Name[ca@valencia]=República Centro Africana
++Name[ca@valencia]=República Centreafricana
+ Name[cs]=Středoafrická republika
+ Name[csb]=Repùblika Westrzédny Africzi
+ Name[cy]=Gweriniaeth Canolig Affrica
+diff -Nur kdebase-runtime-4.3.4/l10n/ci/entry.desktop kdebase-runtime-4.3.5/l10n/ci/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/ci/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/ci/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আইভরি কোস্ট
+ Name[br]=Aod an Olifant
+ Name[ca]=Costa d'Ivori
+-Name[ca@valencia]=Costa d'ivori
++Name[ca@valencia]=Costa d'Ivori
+ Name[cs]=Pobřeží slonoviny
+ Name[csb]=Ùbrzég Słoniowegò Gnôta
+ Name[cy]=Y Traeth Ifori
+diff -Nur kdebase-runtime-4.3.4/l10n/cx/entry.desktop kdebase-runtime-4.3.5/l10n/cx/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/cx/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/cx/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ক্রিস্টমাস দ্বীপপুঞ্জ
+ Name[br]=Inizi Nedeleg
+ Name[ca]=Illa Christmas
+-Name[ca@valencia]=Illa de Pascua
++Name[ca@valencia]=Illa Christmas
+ Name[cs]=Vánoční ostrovy
+ Name[csb]=Gòdowé Òstrowë
+ Name[cy]=Ynys y Nadolig
+diff -Nur kdebase-runtime-4.3.4/l10n/easteurope.desktop kdebase-runtime-4.3.5/l10n/easteurope.desktop
+--- kdebase-runtime-4.3.4/l10n/easteurope.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/easteurope.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ইউরোপ, পূর্ব
+ Name[br]=Europa, Reter
+ Name[ca]=Europa de l'Est
+-Name[ca@valencia]=Europa, de l'est
++Name[ca@valencia]=Europa de l'Est
+ Name[cs]=Evropa, Východní
+ Name[csb]=Pòrénkòwô Eùropa
+ Name[cy]=Ewrop, Dwyrain
+diff -Nur kdebase-runtime-4.3.4/l10n/fk/entry.desktop kdebase-runtime-4.3.5/l10n/fk/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/fk/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/fk/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ফল্কল্যান্ড দ্বীপপুঞ্জ (মালভিনাস)
+ Name[br]=Inizi Falklandi (Malvinas)
+ Name[ca]=Illes Malvines (Falkland)
+-Name[ca@valencia]=Illes Falkland (Malvines)
++Name[ca@valencia]=Illes Malvines (Falkland)
+ Name[cs]=Falklandy (Malvíny)
+ Name[csb]=Falklandzczé Òstrowë (Malwinë)
+ Name[cy]=Ynysoedd Y Ffalcland (Malfinas)
+diff -Nur kdebase-runtime-4.3.4/l10n/fm/entry.desktop kdebase-runtime-4.3.5/l10n/fm/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/fm/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/fm/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -9,7 +9,7 @@
+ Name[bn]=মাইক্রোনেশিয়া, ফেডারেটেড স্টেটস অব
+ Name[bn_IN]=মাইক্রোনেশিয়া যুক্তরাজ্য
+ Name[ca]=Micronèsia (Estats Federats)
+-Name[ca@valencia]=Micronèsia, Estats Federats de
++Name[ca@valencia]=Micronèsia (Estats Federats)
+ Name[cs]=Mikronésie
+ Name[csb]=Federacëjô Stónów Mikronezëji
+ Name[cy]=Micronesia, Taleithau Cyfunol
+diff -Nur kdebase-runtime-4.3.4/l10n/gq/entry.desktop kdebase-runtime-4.3.5/l10n/gq/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/gq/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/gq/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -32,7 +32,7 @@
+ Name[he]=גינאה המשוונית
+ Name[hi]=इक्वेटोरियल गुएना
+ Name[hne]=इक्वेटोरियल गुएना
+-Name[hr]=Ekvatorijalna Gvineja
++Name[hr]=Ekvatorska Gvineja
+ Name[hsb]=Ewatorialna Guineja
+ Name[hu]=Egyenlítői Guinea
+ Name[is]=Miðbaugs-Gínea
+diff -Nur kdebase-runtime-4.3.4/l10n/km/entry.desktop kdebase-runtime-4.3.5/l10n/km/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/km/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/km/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=কোমোরোস
+ Name[br]=Komoros
+ Name[ca]=Comores
+-Name[ca@valencia]=Comoros
++Name[ca@valencia]=Comores
+ Name[cs]=Komory
+ Name[csb]=Kòmòrë
+ Name[cy]=Ynysoedd Y Comoros
+diff -Nur kdebase-runtime-4.3.4/l10n/kn/entry.desktop kdebase-runtime-4.3.5/l10n/kn/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/kn/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/kn/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সেন্ট কিটস ও নেভিস
+ Name[br]=S. Kitts ha Nevis
+ Name[ca]=Saint Chistopher i Nevis
+-Name[ca@valencia]=St. Kitts i Nevis
++Name[ca@valencia]=Saint Chistopher i Nevis
+ Name[cs]=Sv. Kitts a Nevis
+ Name[csb]=St. Kitts ë Nevis
+ Name[cy]=Ynysoedd St. Kitts a Nevis
+diff -Nur kdebase-runtime-4.3.4/l10n/lc/entry.desktop kdebase-runtime-4.3.5/l10n/lc/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/lc/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/lc/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সেন্ট লুসিয়া
+ Name[br]=S. Lucia
+ Name[ca]=Saint Lucia
+-Name[ca@valencia]=St. Lucia
++Name[ca@valencia]=Saint Lucia
+ Name[cs]=Svatá Lucie
+ Name[csb]=St. Lucia
+ Name[cy]=St. Lwsia
+diff -Nur kdebase-runtime-4.3.4/l10n/md/entry.desktop kdebase-runtime-4.3.5/l10n/md/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/md/entry.desktop	2009-10-02 10:19:03.000000000 +0200
++++ kdebase-runtime-4.3.5/l10n/md/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -32,7 +32,7 @@
+ Name[he]=מולדובה
+ Name[hi]=मॉल्दोवा
+ Name[hne]=माल्दोवा
+-Name[hr]=Moldavija
++Name[hr]=Moldova
+ Name[hsb]=Moldawska
+ Name[hu]=Moldova
+ Name[is]=Moldóva
+diff -Nur kdebase-runtime-4.3.4/l10n/nl/entry.desktop kdebase-runtime-4.3.5/l10n/nl/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/nl/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/nl/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -11,7 +11,7 @@
+ Name[bn_IN]=নেদারল্যান্ড
+ Name[br]=Izelvroioù
+ Name[ca]=Països Baixos
+-Name[ca@valencia]=Holanda
++Name[ca@valencia]=Països Baixos
+ Name[cs]=Nizozemí
+ Name[csb]=Néderlandzkô
+ Name[cy]=Yr Iseldiroedd
+diff -Nur kdebase-runtime-4.3.4/l10n/northafrica.desktop kdebase-runtime-4.3.5/l10n/northafrica.desktop
+--- kdebase-runtime-4.3.4/l10n/northafrica.desktop	2009-10-02 10:19:07.000000000 +0200
++++ kdebase-runtime-4.3.5/l10n/northafrica.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -65,8 +65,8 @@
+ Name[se]=Davvi-Afrihká
+ Name[sk]=Severná Afrika
+ Name[sl]=Afrika, severna
+-Name[sr]=Африка, северна
+-Name[sr@latin]=Afrika, severna
++Name[sr]=Африка северна
++Name[sr@latin]=Afrika severna
+ Name[sv]=Afrika, nord
+ Name[ta]=ஆப்பிரிக்கா, வடக்கு
+ Name[te]=ఉత్తర ఆఫ్రికా
+diff -Nur kdebase-runtime-4.3.4/l10n/northamerica.desktop kdebase-runtime-4.3.5/l10n/northamerica.desktop
+--- kdebase-runtime-4.3.4/l10n/northamerica.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/northamerica.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আমেরিকা, উত্তর
+ Name[br]=Amerika, Norzh
+ Name[ca]=Amèrica del Nord
+-Name[ca@valencia]=Amèrica, nord
++Name[ca@valencia]=Amèrica del Nord
+ Name[cs]=Amerika, Severní
+ Name[csb]=Nordowô Amerika
+ Name[cy]=America, Gogledd
+@@ -65,15 +65,15 @@
+ Name[se]=Davvi-Amerihká
+ Name[sk]=Severná Amerika
+ Name[sl]=Amerika, severna
+-Name[sr]=Америка, северна
+-Name[sr@latin]=Amerika, severna
++Name[sr]=Америка северна
++Name[sr@latin]=Amerika severna
+ Name[sv]=Amerika, nord
+ Name[ta]=அமெரிக்கா, வடக்கு
+ Name[te]=ఉత్తర అమెరికా
+ Name[tg]=Амрикои Шимолӣ
+ Name[th]=อเมริกาเหนือ
+ Name[tr]=Kuzey Amerika
+-Name[uk]=Америка, Північна
++Name[uk]=Америка, північна
+ Name[uz]=Amerika, Shimoliy
+ Name[uz@cyrillic]=Америка, Шимолий
+ Name[vi]=Bắc Mĩ
+diff -Nur kdebase-runtime-4.3.4/l10n/northeurope.desktop kdebase-runtime-4.3.5/l10n/northeurope.desktop
+--- kdebase-runtime-4.3.4/l10n/northeurope.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/northeurope.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ইউরোপ, উত্তর
+ Name[br]=Europa, Norzh
+ Name[ca]=Europa del Nord
+-Name[ca@valencia]=Europa, del nord
++Name[ca@valencia]=Europa del Nord
+ Name[cs]=Evropa, Severní
+ Name[csb]=Nordowô Eùropa
+ Name[cy]=Ewrop, Gogledd
+@@ -65,8 +65,8 @@
+ Name[se]=Davvi-Eurohpa
+ Name[sk]=Severná Európa
+ Name[sl]=Evropa, severna
+-Name[sr]=Европа, северна
+-Name[sr@latin]=Evropa, severna
++Name[sr]=Европа северна
++Name[sr@latin]=Evropa severna
+ Name[sv]=Europa, norra
+ Name[ta]=ஐரோப்பா, வடக்கு
+ Name[te]=ఉత్తర ఐరొపా
+diff -Nur kdebase-runtime-4.3.4/l10n/pf/entry.desktop kdebase-runtime-4.3.5/l10n/pf/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/pf/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/pf/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ফ্রেঞ্চ পলিনেশিয়া
+ Name[br]=Polinezi galleg
+ Name[ca]=Polinèsia Francesa
+-Name[ca@valencia]=Polinèsia francessa
++Name[ca@valencia]=Polinèsia Francesa
+ Name[cs]=Francouzská Polynésie
+ Name[csb]=Francëskô Pòlinezëjô
+ Name[cy]=Polynesia Ffrengig
+diff -Nur kdebase-runtime-4.3.4/l10n/pn/entry.desktop kdebase-runtime-4.3.5/l10n/pn/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/pn/entry.desktop	2009-10-02 10:19:04.000000000 +0200
++++ kdebase-runtime-4.3.5/l10n/pn/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -74,7 +74,7 @@
+ Name[tg]=Питкаирн
+ Name[th]=เกาะพิตแคร์น
+ Name[tr]=Pitcairn
+-Name[uk]=Pitcairn
++Name[uk]=Піткерн
+ Name[uz]=Pitkern
+ Name[uz@cyrillic]=Питкерн
+ Name[vi]=Pít-khenh
+diff -Nur kdebase-runtime-4.3.4/l10n/rw/entry.desktop kdebase-runtime-4.3.5/l10n/rw/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/rw/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/rw/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=রওয়ান্ডা
+ Name[br]=Rwanda
+ Name[ca]=Rwanda
+-Name[ca@valencia]=Ruanda
++Name[ca@valencia]=Rwanda
+ Name[cs]=Rwanda
+ Name[csb]=Ruanda
+ Name[cy]=Rwanda
+diff -Nur kdebase-runtime-4.3.4/l10n/sa/entry.desktop kdebase-runtime-4.3.5/l10n/sa/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/sa/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/sa/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সৌদি আরব
+ Name[br]=Arabi Saudiet
+ Name[ca]=Aràbia Saudita
+-Name[ca@valencia]=Aràbia Saurí
++Name[ca@valencia]=Aràbia Saudita
+ Name[cs]=Saúdská Arábie
+ Name[csb]=Saùdejskô Arabskô
+ Name[cy]=Sawdi Arabia
+diff -Nur kdebase-runtime-4.3.4/l10n/sb/entry.desktop kdebase-runtime-4.3.5/l10n/sb/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/sb/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/sb/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সলোমান দ্বীপপুঞ্জ
+ Name[br]=Inizi Salaun
+ Name[ca]=Illes Salomó
+-Name[ca@valencia]=Illes Solomon
++Name[ca@valencia]=Illes Salomó
+ Name[cs]=Šalamounovy ostrovy
+ Name[csb]=Òstrowë Salomona
+ Name[cy]=Ynysoedd Solomon
+diff -Nur kdebase-runtime-4.3.4/l10n/sh/entry.desktop kdebase-runtime-4.3.5/l10n/sh/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/sh/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/sh/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সেন্ট হেলেনা
+ Name[br]=Sant Lena
+ Name[ca]=Saint Helena
+-Name[ca@valencia]=Santa Helena
++Name[ca@valencia]=Saint Helena
+ Name[cs]=Svatá Helena
+ Name[csb]=Swiãtô Lena
+ Name[cy]=Ynys Santes Helena
+diff -Nur kdebase-runtime-4.3.4/l10n/southamerica.desktop kdebase-runtime-4.3.5/l10n/southamerica.desktop
+--- kdebase-runtime-4.3.4/l10n/southamerica.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/southamerica.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আমেরিকা, দক্ষিণ
+ Name[br]=Amerika, Su
+ Name[ca]=Amèrica del Sud
+-Name[ca@valencia]=Amèrica, sud
++Name[ca@valencia]=Amèrica del Sud
+ Name[cs]=Amerika, Jižní
+ Name[csb]=Pôłniowô Amerika
+ Name[cy]=America, De
+@@ -74,7 +74,7 @@
+ Name[tg]=Африкои Ҷанубӣ
+ Name[th]=อเมริกาใต้
+ Name[tr]=Güney Amerika
+-Name[uk]=Америка, Південна
++Name[uk]=Америка, південна
+ Name[uz]=Amerika, Janubiy
+ Name[uz@cyrillic]=Америка, Жанубий
+ Name[vi]=Nam Mĩ
+diff -Nur kdebase-runtime-4.3.4/l10n/southeastasia.desktop kdebase-runtime-4.3.5/l10n/southeastasia.desktop
+--- kdebase-runtime-4.3.4/l10n/southeastasia.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/southeastasia.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=আমেরিকা, দক্ষিণ-পূর্ব
+ Name[br]=Asi, Gevred
+ Name[ca]=Àsia del Sud-Est
+-Name[ca@valencia]=Àsia del Sudest
++Name[ca@valencia]=Àsia del Sud-Est
+ Name[cs]=Asie, Jihovýchodní
+ Name[csb]=Pôłniowô-Pòrénkòwô Azëjô
+ Name[cy]=Asia, De-Ddwyrain
+diff -Nur kdebase-runtime-4.3.4/l10n/southeurope.desktop kdebase-runtime-4.3.5/l10n/southeurope.desktop
+--- kdebase-runtime-4.3.4/l10n/southeurope.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/southeurope.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ইউরোপ, দক্ষিণ
+ Name[br]=Europa, Su
+ Name[ca]=Europa del Sud
+-Name[ca@valencia]=Europa, del sud
++Name[ca@valencia]=Europa del Sud
+ Name[cs]=Evropa, Jižní
+ Name[csb]=Pôłniowô Eùropa
+ Name[cy]=Ewrop, De
+diff -Nur kdebase-runtime-4.3.4/l10n/sr/entry.desktop kdebase-runtime-4.3.5/l10n/sr/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/sr/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/sr/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সুরিনাম
+ Name[br]=Surinam
+ Name[ca]=Surinam
+-Name[ca@valencia]=Suriname
++Name[ca@valencia]=Surinam
+ Name[cs]=Surinam
+ Name[csb]=Surinam
+ Name[cy]=Swrinam
+diff -Nur kdebase-runtime-4.3.4/l10n/st/entry.desktop kdebase-runtime-4.3.5/l10n/st/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/st/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/st/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সাও টোমে ও প্রিন্সিপে
+ Name[br]=Sao Tome ha Principe
+ Name[ca]=Sao Tomé i Príncipe
+-Name[ca@valencia]=Sao Tome i Principe
++Name[ca@valencia]=Sao Tomé i Príncipe
+ Name[cs]=Sao Tome a Principe
+ Name[csb]=Sao Tome ë Principe
+ Name[cy]=Ynysoedd Sao Tome a Principe
+diff -Nur kdebase-runtime-4.3.4/l10n/td/entry.desktop kdebase-runtime-4.3.5/l10n/td/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/td/entry.desktop	2009-10-02 10:19:05.000000000 +0200
++++ kdebase-runtime-4.3.5/l10n/td/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -32,7 +32,7 @@
+ Name[he]=צ'אד
+ Name[hi]=चाड
+ Name[hne]=चाड
+-Name[hr]=čad
++Name[hr]=Čad
+ Name[hsb]=Čad
+ Name[hu]=Csád
+ Name[is]=Tsjad
+diff -Nur kdebase-runtime-4.3.4/l10n/tl/entry.desktop kdebase-runtime-4.3.5/l10n/tl/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/tl/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/tl/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -7,7 +7,7 @@
+ Name[bn]=টিমোর-লেস্টে
+ Name[bn_IN]=টিমোর-লেস্তে
+ Name[ca]=Timor Oriental
+-Name[ca@valencia]=Timor-Leste
++Name[ca@valencia]=Timor Oriental
+ Name[cs]=Timor-Leste
+ Name[csb]=Timor-Leste
+ Name[da]=Timor-Leste
+diff -Nur kdebase-runtime-4.3.4/l10n/tm/entry.desktop kdebase-runtime-4.3.5/l10n/tm/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/tm/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/tm/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=তুর্কমেনিস্তান
+ Name[br]=Turkmenistan
+ Name[ca]=Turkmenistan
+-Name[ca@valencia]=Turcmenistan
++Name[ca@valencia]=Turkmenistan
+ Name[cs]=Turkmenistán
+ Name[csb]=Turkmenistón
+ Name[cy]=Twrcmenistan
+diff -Nur kdebase-runtime-4.3.4/l10n/tp/entry.desktop kdebase-runtime-4.3.5/l10n/tp/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/tp/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/tp/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=পূর্ব টিমুর
+ Name[br]=Timor reter
+ Name[ca]=Timor Oriental
+-Name[ca@valencia]=Timor Est
++Name[ca@valencia]=Timor Oriental
+ Name[cs]=Východní Timor
+ Name[csb]=Pòrénkòwi Timòr
+ Name[cy]=Dwyrain Timor
+@@ -74,7 +74,7 @@
+ Name[tg]=Тимори Шарқӣ
+ Name[th]=ติมอร์ตะวันออก
+ Name[tr]=Doğu Timur
+-Name[uk]=Східний Тімор
++Name[uk]=Східний Тимор
+ Name[uz]=Sharqiy Timur
+ Name[uz@cyrillic]=Шарқий Тимур
+ Name[vi]=Đông Tí-moa
+diff -Nur kdebase-runtime-4.3.4/l10n/tt/entry.desktop kdebase-runtime-4.3.5/l10n/tt/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/tt/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/tt/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ত্রিনিদাদ ও টোবাগো
+ Name[br]=Trinidad ha Tobago
+ Name[ca]=Trinitat i Tobago
+-Name[ca@valencia]=Trinidad i Tobago
++Name[ca@valencia]=Trinitat i Tobago
+ Name[cs]=Trinidad a Tobago
+ Name[csb]=Trinidad ë Tobagò
+ Name[cy]=Ynysoedd Trinidad a Thobago
+diff -Nur kdebase-runtime-4.3.4/l10n/vc/entry.desktop kdebase-runtime-4.3.5/l10n/vc/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/vc/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/vc/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=সেন্ট ভিনসেন্ট ও গ্রেনাডিনস
+ Name[br]=S. Visant hag ar Grenadinez
+ Name[ca]=Saint Vincent i les Grenadines
+-Name[ca@valencia]=St. Vincent i les Granadines
++Name[ca@valencia]=Saint Vincent i les Grenadines
+ Name[cs]=St. Vincent a Grenadiny
+ Name[csb]=St. Vincent ë Grenadyny
+ Name[cy]=Ynysoedd St. Finsent a'r Grenadinau
+diff -Nur kdebase-runtime-4.3.4/l10n/vg/entry.desktop kdebase-runtime-4.3.5/l10n/vg/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/vg/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/vg/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -9,7 +9,7 @@
+ Name[bn]=ভার্জিন আইল্যাণ্ডস, ব্রিটিশ
+ Name[bn_IN]=ব্রিটিশ ভার্জিন দ্বীপ
+ Name[ca]=Illes Verges Britàniques
+-Name[ca@valencia]=Illes Verges, Angleses
++Name[ca@valencia]=Illes Verges Britàniques
+ Name[cs]=Virgin Islands, British
+ Name[csb]=Dzéwczëce Òstrowë (Britijsczé)
+ Name[cy]=Ynysoedd yr Wyryf, Prydeinig
+diff -Nur kdebase-runtime-4.3.4/l10n/vi/entry.desktop kdebase-runtime-4.3.5/l10n/vi/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/vi/entry.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/vi/entry.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -9,7 +9,7 @@
+ Name[bn]=ভার্জিন আইল্যাণ্ডস, মার্কিন যুক্তরাষ্ট্র
+ Name[bn_IN]=মার্কিন ভার্জিন দ্বীপ
+ Name[ca]=Illes Verges Americanes
+-Name[ca@valencia]=Illes Verges, Americanes
++Name[ca@valencia]=Illes Verges Americanes
+ Name[cs]=Panenské ostrovy, U.S.
+ Name[csb]=Dzéwczëce Òstrowë (USA)
+ Name[cy]=Ynysoedd yr Wyryf, Americanaidd
+diff -Nur kdebase-runtime-4.3.4/l10n/westeurope.desktop kdebase-runtime-4.3.5/l10n/westeurope.desktop
+--- kdebase-runtime-4.3.4/l10n/westeurope.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/westeurope.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -10,7 +10,7 @@
+ Name[bn_IN]=ইউরোপ, পশ্চিম
+ Name[br]=Europa, Kornaoueg
+ Name[ca]=Europa Occidental
+-Name[ca@valencia]=Europa, oest
++Name[ca@valencia]=Europa Occidental
+ Name[cs]=Evropa, Západní
+ Name[csb]=Zôpôdnô Eùropa
+ Name[cy]=Ewrop, Gorllewin
+diff -Nur kdebase-runtime-4.3.4/l10n/za/entry.desktop kdebase-runtime-4.3.5/l10n/za/entry.desktop
+--- kdebase-runtime-4.3.4/l10n/za/entry.desktop	2009-11-27 14:01:48.000000000 +0100
++++ kdebase-runtime-4.3.5/l10n/za/entry.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -11,7 +11,7 @@
+ Name[bn_IN]=দক্ষিণ আফ্রিকা
+ Name[br]=Suafrika
+ Name[ca]=Sud-àfrica
+-Name[ca@valencia]=Sudàfrica
++Name[ca@valencia]=Sud-àfrica
+ Name[cs]=Jižní Afrika
+ Name[csb]=Pôłniowô Afrika
+ Name[cy]=De Affrica
+diff -Nur kdebase-runtime-4.3.4/menu/desktop/kde-development-translation.directory kdebase-runtime-4.3.5/menu/desktop/kde-development-translation.directory
+--- kdebase-runtime-4.3.4/menu/desktop/kde-development-translation.directory	2009-10-02 10:18:56.000000000 +0200
++++ kdebase-runtime-4.3.5/menu/desktop/kde-development-translation.directory	2010-01-21 21:48:00.000000000 +0100
+@@ -70,8 +70,8 @@
+ Name[si]=පරිවර්තනය
+ Name[sk]=Preklad
+ Name[sl]=Prevajanje
+-Name[sr]=Превод
+-Name[sr@latin]=Prevod
++Name[sr]=Превођење
++Name[sr@latin]=Prevođenje
+ Name[sv]=Översättning
+ Name[ta]=மொழிபெயர்ப்பு
+ Name[te]=అనువాదం
+@@ -160,8 +160,8 @@
+ Name[si]=පරිවර්තනය
+ Name[sk]=Preklad
+ Name[sl]=Prevajanje
+-Name[sr]=Превод
+-Name[sr@latin]=Prevod
++Name[sr]=Превођење
++Name[sr@latin]=Prevođenje
+ Name[sv]=Översättning
+ Name[ta]=மொழிபெயர்ப்பு
+ Name[te]=అనువాదం
+diff -Nur kdebase-runtime-4.3.4/nepomuk/kcm/kcm_nepomuk.desktop kdebase-runtime-4.3.5/nepomuk/kcm/kcm_nepomuk.desktop
+--- kdebase-runtime-4.3.4/nepomuk/kcm/kcm_nepomuk.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/kcm/kcm_nepomuk.desktop	2010-01-21 21:48:02.000000000 +0100
+@@ -18,7 +18,7 @@
+ Name[bn_IN]=ডেস্কটপে অনুসন্ধান
+ Name[ca]=Cerca a l'escriptori
+ Name[ca@valencia]=Cerca a l'escriptori
+-Name[cs]=Hledání na ploše
++Name[cs]=Vyhledávací služby
+ Name[csb]=Szëkba na pùlce
+ Name[da]=Skrivebordssøgning
+ Name[de]=Desktopsuche
+diff -Nur kdebase-runtime-4.3.4/nepomuk/server/nepomukserver.desktop kdebase-runtime-4.3.5/nepomuk/server/nepomukserver.desktop
+--- kdebase-runtime-4.3.4/nepomuk/server/nepomukserver.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/server/nepomukserver.desktop	2010-01-21 21:48:02.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn_IN]=Nepomuk সার্ভার
+ Name[ca]=Servidor Nepomuk
+ Name[ca@valencia]=Servidor Nepomuk
+-Name[cs]=Nepomuk server
++Name[cs]=Server Nepomuku
+ Name[csb]=Serwer Nepomuk
+ Name[da]=Nepomuk-server
+ Name[de]=Nepomuk-Serverdienst
+diff -Nur kdebase-runtime-4.3.4/nepomuk/server/nepomukservice.desktop kdebase-runtime-4.3.5/nepomuk/server/nepomukservice.desktop
+--- kdebase-runtime-4.3.4/nepomuk/server/nepomukservice.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/server/nepomukservice.desktop	2010-01-21 21:48:02.000000000 +0100
+@@ -9,7 +9,7 @@
+ Comment[bn]=নেপোমুক সার্ভিস
+ Comment[bn_IN]=Nepomuk পরিসেবা
+ Comment[ca]=Servei Nepomuk
+-Comment[ca@valencia]=Servici Nepomuk
++Comment[ca@valencia]=Servei Nepomuk
+ Comment[cs]=Nepomuk služba
+ Comment[csb]=Ùsłëżnota Nepomuk
+ Comment[da]=Nepomuk-tjeneste
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/filewatch/nepomukfilewatch.desktop kdebase-runtime-4.3.5/nepomuk/services/filewatch/nepomukfilewatch.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/filewatch/nepomukfilewatch.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/services/filewatch/nepomukfilewatch.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -79,7 +79,7 @@
+ Comment[be@latin]=Słužba „Nepomuk”, jakaja naziraje za źmienami ŭ fajłach
+ Comment[bg]=Услугата NepomukFileWatch  следи за промяна във файловете
+ Comment[ca]=El servei de control de fitxers del Nepomuk per fer un seguiment dels canvis en fitxers
+-Comment[ca@valencia]=El servici de control de fitxers del Nepomuk per fer un seguiment dels canvis en fitxers
++Comment[ca@valencia]=El servei de control de fitxers del Nepomuk per fer un seguiment dels canvis en fitxers
+ Comment[cs]=Služba Nepomuku, která sleduje změny v souborech
+ Comment[csb]=Ùsłëżnota Nepomùka mònitorëjącô zjinaczi lopków
+ Comment[da]=Nepomuk filovervågningstjeneste til overvågning af filændringer
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/migration1/nepomukmigration1.desktop kdebase-runtime-4.3.5/nepomuk/services/migration1/nepomukmigration1.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/migration1/nepomukmigration1.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/services/migration1/nepomukmigration1.desktop	2010-01-21 21:48:02.000000000 +0100
+@@ -64,7 +64,7 @@
+ Comment[tg]=Nepomuk Data Migration Level 1
+ Comment[th]=ตัวปรับรุ่นข้อมูลระดับ 1 ของ Nepomuk
+ Comment[tr]=Nepomuk Veri Taşıma Seviyesi 1
+-Comment[uk]=Міграція даних Nepomuk - рівень 1
++Comment[uk]=Міграція даних Nepomuk — рівень 1
+ Comment[wa]=Livea 1di migråcion des dnêyes Nepomuk
+ Comment[x-test]=xxNepomuk Data Migration Level 1xx
+ Comment[zh_CN]=Nepomuk 数据迁移级别 1
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/ontologyloader/nepomukontologyloader.desktop kdebase-runtime-4.3.5/nepomuk/services/ontologyloader/nepomukontologyloader.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/ontologyloader/nepomukontologyloader.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/services/ontologyloader/nepomukontologyloader.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -75,7 +75,7 @@
+ Comment[be@latin]=Słužba „Nepomuk”, jakaja absłuhoŭvaje antalohii, zainstalavanyja ŭ systemie
+ Comment[bg]=Услуга, която поддържа инсталираните на компютъра онтологии
+ Comment[ca]=Servei del Nepomuk que manté les ontologies instal·lades en el sistema
+-Comment[ca@valencia]=Servici del Nepomuk que manté les ontologies instal·lades en el sistema
++Comment[ca@valencia]=Servei del Nepomuk que manté les ontologies instal·lades en el sistema
+ Comment[cs]=Služba Nepomuku, která spravuje ontologie instalované v systému
+ Comment[csb]=Ùsłëżnota Nepomuka, jakô sprôwiô òntologijama winstalowónëmi w systemie
+ Comment[da]=Nepomuk-tjeneste som vedligeholder ontologierne som er installeret på systemet
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/queryservice/nepomukqueryservice.desktop kdebase-runtime-4.3.5/nepomuk/services/queryservice/nepomukqueryservice.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/queryservice/nepomukqueryservice.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/services/queryservice/nepomukqueryservice.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -77,7 +77,7 @@
+ Comment[ar]=تقدم خدمة استعلام نبومك واجهة لمجلدات الاستعلام الموجودة مسبقا.
+ Comment[be@latin]=Słužba zapytaŭ „Nepomuk” absłuhoŭvaje interfejs dla stałych katalohaŭ, jakija biaruć źviestki ad zapytaŭ.
+ Comment[ca]=El servei de consultes del Nepomuk (NepomukQueryService) proporciona una interfície per a carpetes persistents de consultes
+-Comment[ca@valencia]=El servici de consultes del Nepomuk (NepomukQueryService) proporciona una interfície per a carpetes persistents de consultes
++Comment[ca@valencia]=El servei de consultes del Nepomuk (NepomukQueryService) proporciona una interfície per a carpetes persistents de consultes
+ Comment[cs]=Dotazovací služba Nepomuku poskytuje rozhraní pro složky trvalých dotazů
+ Comment[da]=Nepomuk forespørgselstjeneste giver en grænseflade til ensartet forespørgsel af mapper
+ Comment[de]=Der Nepomuk-Abfragedienst stellt eine Schnittstelle für persistente Abfrage-Ordner bereit.
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/storage/nepomukstorage.desktop kdebase-runtime-4.3.5/nepomuk/services/storage/nepomukstorage.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/storage/nepomukstorage.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/services/storage/nepomukstorage.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -78,7 +78,7 @@
+ Comment[be@latin]=Hałoŭnaja słužba „Nepomuk” dla zachoŭvańnia źviestak
+ Comment[bg]=Основното място, където се съхраняват данните на Nepomuk
+ Comment[ca]=El servei d'emmagatzematge de dades del nucli del Nepomuk
+-Comment[ca@valencia]=El servici d'emmagatzematge de dades del nucli del Nepomuk
++Comment[ca@valencia]=El servei d'emmagatzematge de dades del nucli del Nepomuk
+ Comment[cs]=Jádro služby Datové úložiště Nepomuku
+ Comment[csb]=Spòdlowô ùsłëżnota Nepomuka do trzëmaniô pòdôwków
+ Comment[da]=Nepomuk kernetjeneste til datalagring
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/storage/nepomukstorage.notifyrc kdebase-runtime-4.3.5/nepomuk/services/storage/nepomukstorage.notifyrc
+--- kdebase-runtime-4.3.4/nepomuk/services/storage/nepomukstorage.notifyrc	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/services/storage/nepomukstorage.notifyrc	2010-01-21 21:48:01.000000000 +0100
+@@ -75,7 +75,7 @@
+ Comment[bg]=Услуга за съхранение Nepomuk
+ Comment[bn_IN]=Nepomuk Storage পরিসেবা
+ Comment[ca]=Servei d'emmagatzematge del Nepomuk
+-Comment[ca@valencia]=Servici d'emmagatzematge del Nepomuk
++Comment[ca@valencia]=Servei d'emmagatzematge del Nepomuk
+ Comment[cs]=Služba úložiště Nepomuku
+ Comment[csb]=Ùsłëznota Storage Nepomuka
+ Comment[da]=Nepomuk lagringstjeneste
+@@ -448,8 +448,8 @@
+ Name[si]=Converting Nepomuk data
+ Name[sk]=Konvertovanie dát Nepomuku
+ Name[sl]=Pretvarjanje Nepomukovih podatkov
+-Name[sr]=Претварам Непомукових податке
+-Name[sr@latin]=Pretvaram Nepomukovih podatke
++Name[sr]=Претварам Непомукове податке
++Name[sr@latin]=Pretvaram Nepomukove podatke
+ Name[sv]=Konverterar Nepomuks data
+ Name[ta]=Converting Nepomuk data
+ Name[te]=నెపోమక్ దత్తాంశమును మార్పిడిచేయుట
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/strigi/nepomukstrigiservice.desktop kdebase-runtime-4.3.5/nepomuk/services/strigi/nepomukstrigiservice.desktop
+--- kdebase-runtime-4.3.4/nepomuk/services/strigi/nepomukstrigiservice.desktop	2009-10-02 10:18:57.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/services/strigi/nepomukstrigiservice.desktop	2010-01-21 21:48:01.000000000 +0100
+@@ -12,7 +12,7 @@
+ Name[bn]=নেপোমুক স্ট্রিগি সার্ভিস
+ Name[bn_IN]=Nepomuk Strigi পরিসেবা
+ Name[ca]=Servei Strigi del Nepomuk
+-Name[ca@valencia]=Servici Strigi del Nepomuk
++Name[ca@valencia]=Servei Strigi del Nepomuk
+ Name[cs]=Nepomuk Strigi služba
+ Name[csb]=Ùsłëznota Strigi Nepomuka
+ Name[da]=Nepomuk Strigi-tjeneste
+@@ -81,7 +81,7 @@
+ Comment[be@latin]=Słužba „Nepomuk”, jakaja kiruje prahramaj „strigidaemon”, indeksujučy fajły ŭ kamputary
+ Comment[bg]=Услуга, която контролира демона на Strigi, напр. файлове с индекси
+ Comment[ca]=Servei del Nepomuk que controla el strigidaemon, p.ex. indexa els fitxers de l'escriptori
+-Comment[ca@valencia]=Servici del Nepomuk que controla el strigidaemon, p.ex. indexa els fitxers de l'escriptori
++Comment[ca@valencia]=Servei del Nepomuk que controla el strigidaemon, p.ex. indexa els fitxers de l'escriptori
+ Comment[cs]=Služba Nepomuku ovládající strigidaemon, který indexuje data v počítači
+ Comment[csb]=Ùsłëznota Nepomuka, jakô sprôwiô demonã strigi, to òznôczô: indeksëje lopczi na pùlce
+ Comment[da]=Nepomuk-tjeneste som styrer strigi-dæmonen, dvs. indekserer filer på desktop-computeren
+diff -Nur kdebase-runtime-4.3.4/nepomuk/services/strigi/nepomukstrigiservice.notifyrc kdebase-runtime-4.3.5/nepomuk/services/strigi/nepomukstrigiservice.notifyrc
+--- kdebase-runtime-4.3.4/nepomuk/services/strigi/nepomukstrigiservice.notifyrc	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/nepomuk/services/strigi/nepomukstrigiservice.notifyrc	2010-01-21 21:48:01.000000000 +0100
+@@ -73,8 +73,8 @@
+ Name[be@latin]=Pačałosia pačatkovaje indeksavańnie.
+ Name[bg]=Стартирано е индексиране
+ Name[bn]=প্রাথমিক সূচি তৈরী করা শুরু
+-Name[ca]=S'ha engegat l'indexació inicial
+-Name[ca@valencia]=S'ha engegat l'indexació inicial
++Name[ca]=S'ha engegat la indexació inicial
++Name[ca@valencia]=S'ha engegat la indexació inicial
+ Name[cs]=Úvodní indexování zahájeno
+ Name[da]=Indledningsvis indeksering startet
+ Name[de]=Erstindizierung gestartet
+@@ -140,8 +140,8 @@
+ Comment[ar]=بدأت سراتجي في الفهرسة الأولية للملفات المحلية من أجل البحث السريع
+ Comment[be@latin]=Słužba „Strigi” pačała pačatkovaje indeksavańnie fajłaŭ u kamputary, dziela chutčejšaha pošuku.
+ Comment[bg]=Strigi стартира индексирането на локални файлове с цел по-бързо търсене
+-Comment[ca]=L'Strigi ha engegat l'indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
+-Comment[ca@valencia]=L'Strigi ha engegat l'indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
++Comment[ca]=L'Strigi ha engegat la indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
++Comment[ca@valencia]=L'Strigi ha engegat la indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
+ Comment[cs]=Strigi zahájil úvodní indexování místních souborů, což zrychlí jejich vyhledávání
+ Comment[da]=Strigi har startet indledningsvis indeksering af lokale filer til hurtig skrivebordssøgning
+ Comment[de]=Strigi hat mit der Erstindizierung der lokalen Dateien für die schnelle Desktopsuche begonnen.
+@@ -205,8 +205,8 @@
+ Name[be@latin]=Skončyłasia pačatkovaje indeksavańnie.
+ Name[bg]=Индексирането завърши
+ Name[bn]=প্রাথমিক সূচি তৈরী করা সম্পন্ন
+-Name[ca]=Ha acabat l'indexació inicial
+-Name[ca@valencia]=Ha acabat l'indexació inicial
++Name[ca]=Ha acabat la indexació inicial
++Name[ca@valencia]=Ha acabat la indexació inicial
+ Name[cs]=Úvodní indexování dokončeno
+ Name[da]=Indledningsvis indeksering færdig
+ Name[de]=Erstindizierung abgeschlossen
+@@ -271,8 +271,8 @@
+ Comment[ar]=أنهت سراتجي الفهرسة الأولية للملفات المحلية من أجل البحث السريع
+ Comment[be@latin]=Słužba „Strigi” skončyła pačatkovaje indeksavańnie fajłaŭ u kamputary, dziela chutčejšaha pošuku.
+ Comment[bg]=Strigi завърши индексирането на файловете
+-Comment[ca]=L'Strigi ha finalitzat l'indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
+-Comment[ca@valencia]=L'Strigi ha finalitzat l'indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
++Comment[ca]=L'Strigi ha finalitzat la indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
++Comment[ca@valencia]=L'Strigi ha finalitzat la indexació inicial dels fitxers locals per a les cerques ràpides d'escriptori
+ Comment[cs]=Strigi dokončil úvodní indexování místních souborů, což zrychlí jejich vyhledávání
+ Comment[da]=Strigi har gennemført indledningsvis indeksering af lokale filer til hurtig skrivebordssøgning
+ Comment[de]=Strigi hat die Erstindizierung der lokalen Dateien für die schnelle Desktopsuche abgeschlossen.
+@@ -470,7 +470,7 @@
+ Name[bg]=Индексирането е продължено
+ Name[bn]=সূচি তৈরী করা পুনরায় চালু
+ Name[ca]=La indexació s'ha reprès
+-Name[ca@valencia]=La indexació s'ha reprès
++Name[ca@valencia]=La indexació s'ha représ
+ Name[cs]=Indexování obnoveno
+ Name[da]=Indeksering genoptaget
+ Name[de]=Erstindizierung fortgesetzt
+@@ -537,7 +537,7 @@
+ Comment[be@latin]=Słužba „Strigi” praciahnuła indeksavańnie fajłaŭ.
+ Comment[bg]=Индексирането на файлове продължава
+ Comment[ca]=La indexació de fitxers de l'Strigi s'ha reprès
+-Comment[ca@valencia]=La indexació de fitxers de l'Strigi s'ha reprès
++Comment[ca@valencia]=La indexació de fitxers de l'Strigi s'ha représ
+ Comment[cs]=Indexování souborů programem Strigi bylo obnoveno
+ Comment[da]=Strigi filindeksering er blevet genoptaget
+ Comment[de]=Strigi hat die Erstindizierung der lokalen Dateien für die schnelle Desktopsuche fortgesetzt.
+diff -Nur kdebase-runtime-4.3.4/nepomuk/strigibackend/sopranoindexwriter.cpp kdebase-runtime-4.3.5/nepomuk/strigibackend/sopranoindexwriter.cpp
+--- kdebase-runtime-4.3.4/nepomuk/strigibackend/sopranoindexwriter.cpp	2009-08-27 10:17:34.000000000 +0200
++++ kdebase-runtime-4.3.5/nepomuk/strigibackend/sopranoindexwriter.cpp	2010-01-21 21:48:02.000000000 +0100
+@@ -1,5 +1,5 @@
+ /*
+-   Copyright (C) 2007-2009 Sebastian Trueg <trueg@kde.org>
++   Copyright (C) 2007-2010 Sebastian Trueg <trueg@kde.org>
+ 
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+@@ -40,6 +40,7 @@
+ #include <QtCore/QDateTime>
+ #include <QtCore/QByteArray>
+ #include <QtCore/QUuid>
++#include <QtCore/QStack>
+ 
+ #include <KUrl>
+ 
+@@ -149,8 +150,7 @@
+ {
+ public:
+     Private()
+-        : indexTransactionID( 0 ),
+-          currentResult( 0 ) {
++        : indexTransactionID( 0 ) {
+         literalTypes[FieldRegister::stringType] = QVariant::String;
+         literalTypes[FieldRegister::floatType] = QVariant::Double;
+         literalTypes[FieldRegister::integerType] = QVariant::Int;
+@@ -225,7 +225,7 @@
+     // However, we only use one thread, only one AnalysisResult at the time.
+     // Thus, we can just remember that and use it in addTriplet.
+     //
+-    const Strigi::AnalysisResult* currentResult;
++    QStack<const Strigi::AnalysisResult*> currentResultStack;
+ 
+ private:
+     QHash<std::string, QVariant::Type> literalTypes;
+@@ -324,6 +324,9 @@
+ // called for each indexed file
+ void Strigi::Soprano::IndexWriter::startAnalysis( const AnalysisResult* idx )
+ {
++    // we need to remember the AnalysisResult since addTriplet does not provide it
++    d->currentResultStack.push(idx);
++
+     if ( idx->depth() > 0 ) {
+         return;
+     }
+@@ -343,8 +346,6 @@
+     }
+ 
+     idx->setWriterData( data );
+-
+-    d->currentResult = idx;
+ }
+ 
+ 
+@@ -496,13 +497,16 @@
+                                                const std::string& p,
+                                                const std::string& o )
+ {
++    if ( d->currentResultStack.top()->depth() > 0 ) {
++        return;
++    }
++
+     //
+     // The Strigi API does not provide context information here, i.e. the AnalysisResult this triple
+     // belongs to. However, we only use one thread, only one AnalysisResult at the time.
+     // Thus, we can just remember that and use it here.
+     //
+-
+-    FileMetaData* md = static_cast<FileMetaData*>( d->currentResult->writerData() );
++    FileMetaData* md = static_cast<FileMetaData*>( d->currentResultStack.top()->writerData() );
+ 
+     QUrl subject = d->mapNode( md, s );
+     Nepomuk::Types::Property property( d->mapNode( md, p ) );
+@@ -519,7 +523,7 @@
+ // called after each indexed file
+ void Strigi::Soprano::IndexWriter::finishAnalysis( const AnalysisResult* idx )
+ {
+-    d->currentResult = 0;
++    d->currentResultStack.pop();
+ 
+     if ( idx->depth() > 0 ) {
+         return;
+diff -Nur kdebase-runtime-4.3.4/phonon/kcm/xine/kcm_phononxine.desktop kdebase-runtime-4.3.5/phonon/kcm/xine/kcm_phononxine.desktop
+--- kdebase-runtime-4.3.4/phonon/kcm/xine/kcm_phononxine.desktop	2009-10-02 10:18:55.000000000 +0200
++++ kdebase-runtime-4.3.5/phonon/kcm/xine/kcm_phononxine.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -65,7 +65,7 @@
+ Name[si]=Phonon Xine
+ Name[sk]=Phonon Xine
+ Name[sl]=Xine za Phonon
+-Name[sr]=Фонон-Ксине
++Name[sr]=Фонон‑Ксин
+ Name[sr@latin]=Phonon-Xine
+ Name[sv]=Phonon Xine
+ Name[ta]=போகான் ஸைன்
+@@ -140,7 +140,7 @@
+ Comment[si]=Xine Backend Configuration
+ Comment[sk]=Nastavenie backendu Xine
+ Comment[sl]=Nastavitve hrbtenice Xine
+-Comment[sr]=Постава позадине Ксине
++Comment[sr]=Постава позадине Ксин
+ Comment[sr@latin]=Postava pozadine Xine
+ Comment[sv]=Inställning av Xine-gränssnitt
+ Comment[ta]=ஸைன் பின்னணொ வடிவமைப்பு
+diff -Nur kdebase-runtime-4.3.4/phonon/kded-module/hardwaredatabase.cpp kdebase-runtime-4.3.5/phonon/kded-module/hardwaredatabase.cpp
+--- kdebase-runtime-4.3.4/phonon/kded-module/hardwaredatabase.cpp	2009-01-01 17:25:19.000000000 +0100
++++ kdebase-runtime-4.3.5/phonon/kded-module/hardwaredatabase.cpp	2010-01-21 21:47:59.000000000 +0100
+@@ -35,7 +35,7 @@
+ #include <QtCore/QFileInfo>
+ #include <QtCore/QSet>
+ #include <QtCore/QString>
+-#include <QtCore/QTimerEvent>
++#include <QtCore/QPointer>
+ 
+ static const char CACHE_MAGIC[] = "PHwdbC";
+ static const quint32 CACHE_VERSION = 2;
+@@ -56,19 +56,15 @@
+ 
+         QCache<QString, Entry> entryCache;
+ 
+-    protected:
+-        void timerEvent(QTimerEvent *);
+-
+     private:
+-        int m_timerId;
+-        QFile *m_cacheFile;
++        QPointer<QFile> m_cacheFile;
+         QString m_fileName;
+ };
+ 
+ K_GLOBAL_STATIC(HardwareDatabasePrivate, s_globalDB)
+ 
+ HardwareDatabasePrivate::HardwareDatabasePrivate()
+-    : m_timerId(-1), m_cacheFile(0)
++    : m_cacheFile()
+ {
+     const QString dbFileName = KStandardDirs::locate("data", QLatin1String("libphonon/hardwaredatabase"));
+     if (dbFileName.isEmpty()) {
+@@ -85,13 +81,12 @@
+         createCache(dbFileName, cacheFileName);
+     } else {
+         m_cacheFile = new QFile(cacheFileName);
+-        m_cacheFile->open(QIODevice::ReadOnly);
+-        m_timerId = startTimer(0);
+-        QDataStream cacheStream(m_cacheFile);
++        m_cacheFile.data()->open(QIODevice::ReadOnly);
++        m_cacheFile.data()->deleteLater();
++        QDataStream cacheStream(m_cacheFile.data());
+         if (!validCacheHeader(cacheStream)) {
+-            m_cacheFile->close();
+-            delete m_cacheFile;
+-            m_cacheFile = 0;
++            m_cacheFile.data()->close();
++            delete m_cacheFile.data();
+             createCache(dbFileName, cacheFileName);
+         }
+     }
+@@ -195,18 +190,17 @@
+ {
+     QDataStream cacheStream;
+     if (m_cacheFile) {
+-        if (m_cacheFile->seek(HEADER_LENGTH)) {
+-            cacheStream.setDevice(m_cacheFile);
++        if (m_cacheFile.data()->seek(HEADER_LENGTH)) {
++            cacheStream.setDevice(m_cacheFile.data());
+         } else {
+-            delete m_cacheFile;
+-            m_cacheFile = 0;
++            delete m_cacheFile.data();
+         }
+     }
+     if (!m_cacheFile) {
+         m_cacheFile = new QFile(m_fileName);
+-        m_cacheFile->open(QIODevice::ReadOnly);
+-        m_timerId = startTimer(0);
+-        cacheStream.setDevice(m_cacheFile);
++        m_cacheFile.data()->open(QIODevice::ReadOnly);
++        m_cacheFile.data()->deleteLater();
++        cacheStream.setDevice(m_cacheFile.data());
+         if (!validCacheHeader(cacheStream)) {
+             return 0;
+         }
+@@ -215,14 +209,14 @@
+     quint32 hashTableBuckets;
+     cacheStream >> hashTableOffset >> hashTableBuckets;
+     const uint h = qHash(uniqueId);
+-    m_cacheFile->seek(hashTableOffset + (h % hashTableBuckets) * sizeof(quint32));
++    m_cacheFile.data()->seek(hashTableOffset + (h % hashTableBuckets) * sizeof(quint32));
+     quint32 offset;
+     cacheStream >> offset;
+     //kDebug(601) << hashTableOffset << hashTableBuckets << uniqueId << h << offset;
+     if (0 == offset) {
+         return 0;
+     }
+-    m_cacheFile->seek(offset);
++    m_cacheFile.data()->seek(offset);
+     QList<BucketEntry> bucket;
+     cacheStream >> bucket;
+ 
+@@ -234,7 +228,7 @@
+ 
+     foreach (const BucketEntry &entry, bucket) {
+         if (entry.hash == h) {
+-            m_cacheFile->seek(entry.offset);
++            m_cacheFile.data()->seek(entry.offset);
+             cacheStream >> readUdi;
+             if (readUdi == uniqueId) {
+                 cacheStream >> name >> iconName >> pref >> isAdvanced;
+@@ -248,17 +242,6 @@
+     return 0;
+ }
+ 
+-void HardwareDatabasePrivate::timerEvent(QTimerEvent *e)
+-{
+-    if (e->timerId() == m_timerId) {
+-        delete m_cacheFile;
+-        m_cacheFile = 0;
+-        killTimer(m_timerId);
+-    } else {
+-        QObject::timerEvent(e);
+-    }
+-}
+-
+ bool contains(const QString &uniqueId)
+ {
+     return (s_globalDB->entryCache[uniqueId] || s_globalDB->readEntry(uniqueId));
+diff -Nur kdebase-runtime-4.3.4/phonon/platform_kde/phonon.notifyrc kdebase-runtime-4.3.5/phonon/platform_kde/phonon.notifyrc
+--- kdebase-runtime-4.3.4/phonon/platform_kde/phonon.notifyrc	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/phonon/platform_kde/phonon.notifyrc	2010-01-21 21:47:59.000000000 +0100
+@@ -65,7 +65,7 @@
+ Comment[tg]=Phonon: Китобхонаи мултимедиаи KDE
+ Comment[th]=Phonon: ไลบรารีสื่อประสมของ KDE
+ Comment[tr]=Phonon: KDE'nin Çoklu Ortam Kitaplığı
+-Comment[uk]=Phonon: Мультимедійна бібліотека KDE
++Comment[uk]=Phonon: мультимедійна бібліотека KDE
+ Comment[wa]=Phonon: Livreye multimedia da KDE
+ Comment[x-test]=xxPhonon: KDE's Multimedia Libraryxx
+ Comment[zh_CN]=Phonon：KDE 多媒体类库
+@@ -270,7 +270,7 @@
+ Comment[te]=అభీష్ట పరికరం అందుబాటులో లేకపోతే స్వయంచాలక ఫాల్‌బాక్‌పై నోటీసు
+ Comment[th]=การแจ้งให้ทราบเมื่ออุปกรณ์เสียงที่ควรใช้ล้มเหลวและทำการเลือกใช้ตัวอื่นอัตโนมัติ
+ Comment[tr]=Tercih edilen aygıt kullanılabilir olmadığında otomatik olarak yedek aygıta geçildiğini bildir
+-Comment[uk]=Повідомлення про автоматичне повернення до типового пристрою, якщо бажаний пристрій недоступний
++Comment[uk]=Сповіщення про автоматичне повернення до типового пристрою, якщо бажаний пристрій недоступний
+ Comment[wa]=Notifiaedje des tcheyåjhes otomatikes sel éndjin mî inmé n' est nén disponibe
+ Comment[x-test]=xxNotification on automatic fallback if the preferred device is unavailablexx
+ Comment[zh_CN]=如果首选设备失效，自动在备用设备上发出通知
+diff -Nur kdebase-runtime-4.3.4/pics/hicolor/index.theme kdebase-runtime-4.3.5/pics/hicolor/index.theme
+--- kdebase-runtime-4.3.4/pics/hicolor/index.theme	2009-10-02 10:18:55.000000000 +0200
++++ kdebase-runtime-4.3.5/pics/hicolor/index.theme	2010-01-21 21:47:59.000000000 +0100
+@@ -79,8 +79,8 @@
+ Comment[be@latin]=Zapasny matyŭ ikonaŭ
+ Comment[bg]=Тема по подразбиране
+ Comment[bn_IN]=বিকল্প আইকন থিম
+-Comment[ca]=Tema d'icones altrenatiu
+-Comment[ca@valencia]=Tema d'icones altrenatiu
++Comment[ca]=Tema d'icones alternatiu
++Comment[ca@valencia]=Tema d'icones alternatiu
+ Comment[cs]=Záložní motiv ikon
+ Comment[csb]=Alternatiwny zestôwk ikònów
+ Comment[da]=Reserve-ikontema
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/plasma-scriptengine-applet-simple-javascript.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/plasma-scriptengine-applet-simple-javascript.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/plasma-scriptengine-applet-simple-javascript.desktop	2009-10-30 13:28:22.000000000 +0100
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/plasma-scriptengine-applet-simple-javascript.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -54,7 +54,7 @@
+ Name[sk]=JavaScript Widget
+ Name[sl]=Gradnik v JavaScriptu
+ Name[sr]=јаваскриптни виџет
+-Name[sr@latin]=javascript vidžet
++Name[sr@latin]=JavaScript vidžet
+ Name[sv]=Grafisk Javascript-komponent
+ Name[ta]=JavaScript Widget
+ Name[te]=జావాస్క్రిప్‍ట్ విడ్‍జ్‌ట్
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/plasma-scriptengine-runner-javascript.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/plasma-scriptengine-runner-javascript.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/plasma-scriptengine-runner-javascript.desktop	2009-10-02 10:19:07.000000000 +0200
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/plasma-scriptengine-runner-javascript.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -53,7 +53,7 @@
+ Name[sk]=JavaScript bežec
+ Name[sl]=Zaganjalnik javascripta
+ Name[sr]=јаваскриптни извођач
+-Name[sr@latin]=javascript izvođač
++Name[sr@latin]=JavaScript izvođač
+ Name[sv]=Kör Javascript
+ Name[ta]=JavaScript Runner
+ Name[te]=జావాస్క్రిప్‍ట్ నడుపునది
+@@ -119,7 +119,7 @@
+ Comment[sk]=JavaScript bežec
+ Comment[sl]=Zaganjalnik javascripta
+ Comment[sr]=Јаваскриптни извођач
+-Comment[sr@latin]=Javascript izvođač
++Comment[sr@latin]=JavaScript izvođač
+ Comment[sv]=Kör Javascript
+ Comment[ta]=JavaScript Runner
+ Comment[te]=జావాస్క్రిప్‍ట్ నడుపునది
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/javascript-config-test/metadata.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/javascript-config-test/metadata.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/javascript-config-test/metadata.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/javascript-config-test/metadata.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -99,7 +99,7 @@
+ Comment[sk]=Prvok pre testovanie JavaScriptu
+ Comment[sl]=Preizkusni gradnik nastavitvenega objekta za Javascript
+ Comment[sr]=Виџет за пробу јаваскриптног објекта поставе
+-Comment[sr@latin]=Vidžet za probu javascript objekta postave
++Comment[sr@latin]=Vidžet za probu JavaScript objekta postave
+ Comment[sv]=Grafisk testkomponent för Javascript-inställningsobjekt
+ Comment[te]=జావాస్క్రిప్‍ట్ కాన్ఫిగ్ ఆబ్జక్‍ట్ టెస్‍ట్ విడ్జట్
+ Comment[tg]=Проверка работы Knotify
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-digital-clock/metadata.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-digital-clock/metadata.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-digital-clock/metadata.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-digital-clock/metadata.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -106,7 +106,7 @@
+ Comment[sk]=JavaScript digitálne hodiny
+ Comment[sl]=Digitalna ura v Javascriptu
+ Comment[sr]=Јаваскриптни дигитални сат
+-Comment[sr@latin]=Javascript digitalni sat
++Comment[sr@latin]=JavaScript digitalni sat
+ Comment[sv]=Javascript-digitalklocka
+ Comment[tg]=Часы, поддерживающие темы SVG
+ Comment[tr]=Javascript dijital saat
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-mediaplayer/metadata.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-mediaplayer/metadata.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-mediaplayer/metadata.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-mediaplayer/metadata.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -4,6 +4,7 @@
+ Name[bg]=script-mediaplayer
+ Name[bn_IN]=script-mediaplayer
+ Name[ca]=script-mediaplayer
++Name[ca@valencia]=script-mediaplayer
+ Name[cs]=script-mediaplayer
+ Name[da]=script-mediaplayer
+ Name[de]=script-mediaplayer
+@@ -17,7 +18,7 @@
+ Name[gl]=script-mediaplayer
+ Name[gu]=સ્ક્રિપ્ટ-મીડિઆપ્લેયર
+ Name[hi]=स्क्रिप्ट-मीडिया प्लेयर
+-Name[hr]=script-multimedijski_program
++Name[hr]=script-sviračmultimedije
+ Name[hu]=script-mediaplayer
+ Name[is]=margmiðlunarspilara-skrifta
+ Name[it]=script-mediaplayer
+@@ -59,6 +60,7 @@
+ Comment[bg]=Медиа плеър (JavaScript)
+ Comment[bn_IN]=Javascript মিডিয়া প্লেয়ার
+ Comment[ca]=Reproductor de suports en Javascript
++Comment[ca@valencia]=Reproductor de suports en Javascript
+ Comment[cs]=Přehrávač multimédií JavaScript
+ Comment[da]=Medieafspiller i Javascript
+ Comment[de]=Javascript-Medienspieler
+@@ -73,7 +75,7 @@
+ Comment[gl]=Reprodutor multimedia escrito en Javascript
+ Comment[gu]=જાવાસ્ક્રિપ્ટ મિડીઆ પ્લેયર
+ Comment[hi]=जावास्क्रिप्ट मीडिया प्लेयर
+-Comment[hr]=Multimedijski program
++Comment[hr]=Svirač multimedije u Javascriptu
+ Comment[hu]=JavaScript-alapú médialejátszó
+ Comment[is]=JavaScript margmiðlunarspilari
+ Comment[it]=Riproduttore multimediale JavaScript
+@@ -99,7 +101,7 @@
+ Comment[sk]=JavaScript prehrávač médií
+ Comment[sl]=Večpredstavnostni predvajalnik v JavaScriptu
+ Comment[sr]=Јаваскриптни медија плејер
+-Comment[sr@latin]=Javascript medija plejer
++Comment[sr@latin]=JavaScript medija plejer
+ Comment[sv]=Javascript-mediaspelare
+ Comment[tg]=Часы, поддерживающие темы SVG
+ Comment[tr]=Javascript çokluortam oynatıcı
+diff -Nur kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-nowplaying/metadata.desktop kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-nowplaying/metadata.desktop
+--- kdebase-runtime-4.3.4/plasma/scriptengines/javascript/tests/script-nowplaying/metadata.desktop	2009-11-27 14:01:49.000000000 +0100
++++ kdebase-runtime-4.3.5/plasma/scriptengines/javascript/tests/script-nowplaying/metadata.desktop	2010-01-21 21:48:05.000000000 +0100
+@@ -101,7 +101,7 @@
+ Comment[sk]=JavaScriptová verzia aktuálne hranej skladby
+ Comment[sl]=Trenutno predvajana skladba v Javascriptu
+ Comment[sr]=Јаваскриптна верзија тренутне свирке
+-Comment[sr@latin]=Javascript verzija trenutne svirke
++Comment[sr@latin]=JavaScript verzija trenutne svirke
+ Comment[sv]=Javascript-version av nuvarande spår som spelas
+ Comment[te]=ప్లేఅవుతున్న జావాస్క్రిప్ట్ వర్షన్ ప్రస్తుత ట్రాక్
+ Comment[tg]=Часы, поддерживающие темы SVG
+diff -Nur kdebase-runtime-4.3.4/platforms/win/config/platform.desktop kdebase-runtime-4.3.5/platforms/win/config/platform.desktop
+--- kdebase-runtime-4.3.4/platforms/win/config/platform.desktop	2009-11-27 14:01:45.000000000 +0100
++++ kdebase-runtime-4.3.5/platforms/win/config/platform.desktop	2010-01-21 21:48:00.000000000 +0100
+@@ -15,6 +15,7 @@
+ Name[bg]=Platform
+ Name[bn_IN]=প্ল্যাটফর্ম
+ Name[ca]=Plataforma
++Name[ca@valencia]=Plataforma
+ Name[cs]=Platforma
+ Name[csb]=Platfòrma
+ Name[da]=Platform
+@@ -71,6 +72,7 @@
+ Comment[bg]=Менджър за Windows
+ Comment[bn_IN]=Windows প্ল্যাটফর্ম পরিচালন ব্যবস্থা
+ Comment[ca]=Gestor de la plataforma Windows
++Comment[ca@valencia]=Gestor de la plataforma Windows
+ Comment[cs]=Správce platformy Windows
+ Comment[csb]=Mendżer platfòrmë òknów
+ Comment[da]=Platformshåndtering til Windows
+diff -Nur kdebase-runtime-4.3.4/platforms/win/kwinstartmenu/winstartmenu.desktop kdebase-runtime-4.3.5/platforms/win/kwinstartmenu/winstartmenu.desktop
+--- kdebase-runtime-4.3.4/platforms/win/kwinstartmenu/winstartmenu.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/platforms/win/kwinstartmenu/winstartmenu.desktop	2010-01-21 21:48:00.000000000 +0100
+@@ -64,7 +64,7 @@
+ Name[tg]=KDED: Модуль стартового меню Windows
+ Name[th]=มอดูลเมนูเริ่มหน้าต่างของ KDED
+ Name[tr]=KDED Windows Başlat Menüsü Modülü
+-Name[uk]=Модуль меню "Старт" для KDED
++Name[uk]=Модуль меню «Старт» для KDED
+ Name[wa]=Moduledressêye d' enondaedje des purneas KDED
+ Name[x-test]=xxKDED Windows Start Menu Modulexx
+ Name[zh_CN]=KDED 窗口开始菜单模块
+@@ -143,7 +143,7 @@
+ Comment[tg]=Показ настраиваемых значков в KDE
+ Comment[th]=สนับสนุนไอคอนทางลัด
+ Comment[tr]=Kısayol simge desteği
+-Comment[uk]=Підтримка скорочень піктограм
++Comment[uk]=Підтримка піктограм скорочень
+ Comment[vi]=Hỗ trợ biểu tượng giúp truy cập nhanh
+ Comment[wa]=Sopoirt imådjetes rascourtis
+ Comment[x-test]=xxShortcut icon supportxx
+diff -Nur kdebase-runtime-4.3.4/renamedlgplugins/audio/renaudiodlg.desktop kdebase-runtime-4.3.5/renamedlgplugins/audio/renaudiodlg.desktop
+--- kdebase-runtime-4.3.4/renamedlgplugins/audio/renaudiodlg.desktop	2009-10-02 10:18:55.000000000 +0200
++++ kdebase-runtime-4.3.5/renamedlgplugins/audio/renaudiodlg.desktop	2010-01-21 21:47:59.000000000 +0100
+@@ -29,7 +29,7 @@
+ Name[he]=תצוגת שמע מקדימה
+ Name[hi]=आडियो पूर्वावलोकन
+ Name[hne]=आडियो प्रीव्यू
+-Name[hr]=Pregled zvuka
++Name[hr]=Preslušavanje
+ Name[hsb]=Přehladka za zwuki
+ Name[hu]=Hangminta
+ Name[is]=Hljóðforsýn
+diff -Nur kdebase-runtime-4.3.4/solidautoeject/solidautoeject.desktop kdebase-runtime-4.3.5/solidautoeject/solidautoeject.desktop
+--- kdebase-runtime-4.3.4/solidautoeject/solidautoeject.desktop	2009-11-27 14:01:46.000000000 +0100
++++ kdebase-runtime-4.3.5/solidautoeject/solidautoeject.desktop	2010-01-21 21:48:02.000000000 +0100
+@@ -8,6 +8,7 @@
+ Name[ar]=خدمة سولد للإخراج التلقائي
+ Name[bg]=Solid Auto-eject service
+ Name[ca]=Servei Solid d'expulsió automàtica
++Name[ca@valencia]=Servei Solid d'expulsió automàtica
+ Name[cs]=Služba automatického vysunutí pro Solid
+ Name[da]=Solid auto-skub-ud-tjeneste
+ Name[de]=Automatischer Auswurfdienst von Solid
+@@ -55,6 +56,7 @@
+ Comment[ar]=تسمح بإخراج  المشغلات عندما يضغط على زر الإخراج الخاص بهن
+ Comment[bg]=Автоматично освобождаване на устройствата при натискане на бутона за изваждане
+ Comment[ca]=Permet alliberar unitats automàticament quan es prem el seu botó d'expulsió
++Comment[ca@valencia]=Permet alliberar unitats automàticament quan es prem el seu botó d'expulsió
+ Comment[cs]=Umožňuje automaticky uvolnit mechaniku při stisknutí tlačítka vysunutí
+ Comment[da]=Muliggør automatisk åbning af drev når der trykkes på deres skub ud-knap
+ Comment[de]=Ermöglicht das automatische Lösen der Laufwerkseinbindung, wenn der Auswurfknopf betätigt worden ist.
+diff -Nur kdebase-runtime-4.3.4/soliduiserver/soliduiserver.desktop kdebase-runtime-4.3.5/soliduiserver/soliduiserver.desktop
+--- kdebase-runtime-4.3.4/soliduiserver/soliduiserver.desktop	2009-11-27 14:01:47.000000000 +0100
++++ kdebase-runtime-4.3.5/soliduiserver/soliduiserver.desktop	2010-01-21 21:48:04.000000000 +0100
+@@ -140,7 +140,7 @@
+ Comment[tg]=Интерфейс пользователя для Solid, системы обнаружения оборудования
+ Comment[th]=เซิร์ฟเวอร์ส่วนติดต่อผู้ใช้ของ Solid คือระบบตรวจสอบฮาร์ดแวร์
+ Comment[tr]=Solid için bir kullanıcı arayüzü sunucu, donanım bulma sistemi
+-Comment[uk]=Сервер інтерфейсу користувача для Solid - система виявлення обладнання
++Comment[uk]=Сервер інтерфейсу користувача для Solid — система виявлення обладнання
+ Comment[wa]=On sierveu d' eterface uzeu po Solid, li sistinme di deteccion di l' éndjolreye
+ Comment[x-test]=xxA User Interface server for Solid, the hardware detection systemxx
+ Comment[zh_CN]=硬件检测系统 Solid 的用户界面服务器
